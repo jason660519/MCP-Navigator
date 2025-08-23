@@ -1,0 +1,1660 @@
+{
+  "metadata": {
+    "title": "Comprehensive MCP Server Directory",
+    "description": "A curated collection of 50+ Model Context Protocol servers",
+    "total_servers": 46,
+    "total_categories": 22,
+    "collection_date": "2025-05-26",
+    "version": "1.0",
+    "sources": [
+      "https://github.com/modelcontextprotocol/servers",
+      "https://modelcontextprotocol.io/examples",
+      "Community collections and awesome lists"
+    ]
+  },
+  "categories": [
+    {
+      "name": "AI Services",
+      "count": 8,
+      "description": "AI model integration, machine learning, intelligent processing",
+      "icon": "🤖",
+      "color": "#F44336",
+      "servers": [
+        "EverArt",
+        "Memory",
+        "Sequential Thinking",
+        "Perplexity",
+        "OpenAI"
+      ]
+    },
+    {
+      "name": "Databases",
+      "count": 6,
+      "description": "Database integration, query execution, data analysis",
+      "icon": "🗄️",
+      "color": "#2196F3",
+      "servers": [
+        "PostgreSQL",
+        "SQLite",
+        "MongoDB",
+        "Redis",
+        "Airtable"
+      ]
+    },
+    {
+      "name": "Development Tools",
+      "count": 4,
+      "description": "Code management, version control, CI/CD automation",
+      "icon": "⚒️",
+      "color": "#FF9800",
+      "servers": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "E2B"
+      ]
+    },
+    {
+      "name": "Productivity",
+      "count": 4,
+      "description": "Task management, workflow automation, organization",
+      "icon": "📋",
+      "color": "#8BC34A",
+      "servers": [
+        "Notion",
+        "Linear",
+        "Excel",
+        "Todoist"
+      ]
+    },
+    {
+      "name": "Web Scraping",
+      "count": 3,
+      "description": "Web automation, data extraction, content crawling",
+      "icon": "🕷️",
+      "color": "#9C27B0",
+      "servers": [
+        "Fetch",
+        "Puppeteer",
+        "Browserbase"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "count": 2,
+      "description": "DevOps related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Kubernetes",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Note Taking",
+      "count": 2,
+      "description": "Knowledge management, note organization, information capture",
+      "icon": "📝",
+      "color": "#3F51B5",
+      "servers": [
+        "Obsidian",
+        "Apple Books"
+      ]
+    },
+    {
+      "name": "Cloud Services",
+      "count": 2,
+      "description": "Cloud platform integration, infrastructure management",
+      "icon": "☁️",
+      "color": "#607D8B",
+      "servers": [
+        "AWS KB Retrieval",
+        "Cloudflare"
+      ]
+    },
+    {
+      "name": "Media",
+      "count": 2,
+      "description": "Content creation, media processing, entertainment",
+      "icon": "🎬",
+      "color": "#E91E63",
+      "servers": [
+        "YouTube",
+        "Spotify"
+      ]
+    },
+    {
+      "name": "Cloud Storage",
+      "count": 1,
+      "description": "Cloud Storage related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Google Drive"
+      ]
+    },
+    {
+      "name": "Utilities",
+      "count": 1,
+      "description": "Utilities related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Time"
+      ]
+    },
+    {
+      "name": "Research",
+      "count": 1,
+      "description": "Research related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "ArXiv"
+      ]
+    },
+    {
+      "name": "Communication",
+      "count": 1,
+      "description": "Team collaboration, messaging, notifications",
+      "icon": "💬",
+      "color": "#00BCD4",
+      "servers": [
+        "Slack"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "count": 1,
+      "description": "Game Development related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Unity Engine"
+      ]
+    },
+    {
+      "name": "System Automation",
+      "count": 1,
+      "description": "System Automation related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Apple Shortcuts"
+      ]
+    },
+    {
+      "name": "GIS",
+      "count": 1,
+      "description": "GIS related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "QGIS"
+      ]
+    },
+    {
+      "name": "Search & Web",
+      "count": 1,
+      "description": "Web search, information retrieval, browser automation",
+      "icon": "🔍",
+      "color": "#795548",
+      "servers": [
+        "Brave Search"
+      ]
+    },
+    {
+      "name": "Finance",
+      "count": 1,
+      "description": "Payment processing, financial data, transaction management",
+      "icon": "💰",
+      "color": "#FFC107",
+      "servers": [
+        "Stripe"
+      ]
+    },
+    {
+      "name": "File Systems",
+      "count": 1,
+      "description": "File and directory management, document processing",
+      "icon": "📁",
+      "color": "#4CAF50",
+      "servers": [
+        "Filesystem"
+      ]
+    },
+    {
+      "name": "Social Media",
+      "count": 1,
+      "description": "Social Media related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "TikTok"
+      ]
+    },
+    {
+      "name": "Location Services",
+      "count": 1,
+      "description": "Location Services related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Google Maps"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "count": 1,
+      "description": "Monitoring related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Sentry"
+      ]
+    }
+  ],
+  "servers": {
+    "aws_kb_retrieval": {
+      "name": "AWS KB Retrieval",
+      "description": "Retrieval from AWS Knowledge Base using Bedrock Agent Runtime",
+      "category": "Cloud Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-aws-kb-retrieval",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Cloud resource management",
+        "Service integration",
+        "Infrastructure automation"
+      ],
+      "examples": [
+        "Integrate with AWS KB Retrieval services",
+        "Automate aws kb retrieval workflows",
+        "Access AWS KB Retrieval data and functionality"
+      ]
+    },
+    "brave_search": {
+      "name": "Brave Search",
+      "description": "Web and local search using Brave's Search API",
+      "category": "Search & Web",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-brave-search",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Information retrieval",
+        "Search operations",
+        "Web queries"
+      ],
+      "examples": [
+        "Integrate with Brave Search services",
+        "Automate brave search workflows",
+        "Access Brave Search data and functionality"
+      ]
+    },
+    "everart": {
+      "name": "EverArt",
+      "description": "AI image generation using various models",
+      "category": "AI Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-everart",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with EverArt services",
+        "Automate everart workflows",
+        "Access EverArt data and functionality"
+      ]
+    },
+    "fetch": {
+      "name": "Fetch",
+      "description": "Web content fetching and conversion for efficient LLM usage",
+      "category": "Web Scraping",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-fetch",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data extraction",
+        "Web automation",
+        "Content crawling"
+      ],
+      "examples": [
+        "Integrate with Fetch services",
+        "Automate fetch workflows",
+        "Access Fetch data and functionality"
+      ]
+    },
+    "filesystem": {
+      "name": "Filesystem",
+      "description": "Secure file operations with configurable access controls",
+      "category": "File Systems",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-filesystem",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "File management",
+        "Document processing",
+        "Content organization"
+      ],
+      "examples": [
+        "Read and write files securely",
+        "Search through directory structures",
+        "Manage file permissions and access"
+      ]
+    },
+    "git": {
+      "name": "Git",
+      "description": "Tools to read, search, and manipulate Git repositories",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-git",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Code management",
+        "Repository operations",
+        "CI/CD automation"
+      ],
+      "examples": [
+        "Clone and manage repositories",
+        "Create and review pull requests",
+        "Automate version control workflows"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "Repository management, file operations, and GitHub API integration",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-github",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Code management",
+        "Repository operations",
+        "CI/CD automation"
+      ],
+      "examples": [
+        "Clone and manage repositories",
+        "Create and review pull requests",
+        "Automate version control workflows"
+      ]
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "description": "GitLab API integration enabling project management",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-gitlab",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Code management",
+        "Repository operations",
+        "CI/CD automation"
+      ],
+      "examples": [
+        "Clone and manage repositories",
+        "Create and review pull requests",
+        "Automate version control workflows"
+      ]
+    },
+    "google_drive": {
+      "name": "Google Drive",
+      "description": "File access and search capabilities for Google Drive",
+      "category": "Cloud Storage",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-gdrive",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Google Drive services",
+        "Automate google drive workflows",
+        "Access Google Drive data and functionality"
+      ]
+    },
+    "google_maps": {
+      "name": "Google Maps",
+      "description": "Location services, directions, and place details",
+      "category": "Location Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-google-maps",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Google Maps services",
+        "Automate google maps workflows",
+        "Access Google Maps data and functionality"
+      ]
+    },
+    "memory": {
+      "name": "Memory",
+      "description": "Knowledge graph-based persistent memory system",
+      "category": "AI Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-memory",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with Memory services",
+        "Automate memory workflows",
+        "Access Memory data and functionality"
+      ]
+    },
+    "postgresql": {
+      "name": "PostgreSQL",
+      "description": "Read-only database access with schema inspection capabilities",
+      "category": "Databases",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-postgres",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "description": "Browser automation and web scraping capabilities",
+      "category": "Web Scraping",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-puppeteer",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data extraction",
+        "Web automation",
+        "Content crawling"
+      ],
+      "examples": [
+        "Integrate with Puppeteer services",
+        "Automate puppeteer workflows",
+        "Access Puppeteer data and functionality"
+      ]
+    },
+    "sentry": {
+      "name": "Sentry",
+      "description": "Retrieving and analyzing issues from Sentry.io",
+      "category": "Monitoring",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-sentry",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Sentry services",
+        "Automate sentry workflows",
+        "Access Sentry data and functionality"
+      ]
+    },
+    "sequential_thinking": {
+      "name": "Sequential Thinking",
+      "description": "Dynamic problem-solving through thought sequences",
+      "category": "AI Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-sequentialthinking",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with Sequential Thinking services",
+        "Automate sequential thinking workflows",
+        "Access Sequential Thinking data and functionality"
+      ]
+    },
+    "slack": {
+      "name": "Slack",
+      "description": "Channel management and messaging capabilities",
+      "category": "Communication",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-slack",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Team collaboration",
+        "Message management",
+        "Notification handling"
+      ],
+      "examples": [
+        "Integrate with Slack services",
+        "Automate slack workflows",
+        "Access Slack data and functionality"
+      ]
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "description": "Database interaction and business intelligence features",
+      "category": "Databases",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-sqlite",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "time": {
+      "name": "Time",
+      "description": "Time and timezone conversion capabilities",
+      "category": "Utilities",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+      "creator_maintainer": "Anthropic",
+      "installation_instructions": "npm install @modelcontextprotocol/server-time",
+      "documentation_links": [
+        "https://modelcontextprotocol.io/examples"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Time services",
+        "Automate time workflows",
+        "Access Time data and functionality"
+      ]
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "description": "Deploy, configure & interrogate your resources on the Cloudflare developer platform (e.g. Workers/KV/R2/D1)",
+      "category": "Cloud Services",
+      "repository_link": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "creator_maintainer": "Cloudflare",
+      "installation_instructions": "npx @cloudflare/mcp-server-cloudflare",
+      "documentation_links": [
+        "https://github.com/cloudflare/mcp-server-cloudflare"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Cloud resource management",
+        "Service integration",
+        "Infrastructure automation"
+      ],
+      "examples": [
+        "Integrate with Cloudflare services",
+        "Automate cloudflare workflows",
+        "Access Cloudflare data and functionality"
+      ]
+    },
+    "notion": {
+      "name": "Notion",
+      "description": "Notion official MCP server",
+      "category": "Productivity",
+      "repository_link": "https://github.com/makenotion/notion-mcp-server",
+      "creator_maintainer": "Notion",
+      "installation_instructions": "npm install @notion/mcp-server",
+      "documentation_links": [
+        "https://github.com/makenotion/notion-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Task management",
+        "Workflow automation",
+        "Organization"
+      ],
+      "examples": [
+        "Integrate with Notion services",
+        "Automate notion workflows",
+        "Access Notion data and functionality"
+      ]
+    },
+    "mongodb": {
+      "name": "MongoDB",
+      "description": "A Model Context Protocol Server for querying and analyzing MongoDB collections",
+      "category": "Databases",
+      "repository_link": "https://github.com/kiliczsh/mcp-mongo-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install mcp-mongo-server",
+      "documentation_links": [
+        "https://github.com/kiliczsh/mcp-mongo-server"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "redis": {
+      "name": "Redis",
+      "description": "A natural language interface designed for agentic applications to efficiently manage and search data in Redis",
+      "category": "Databases",
+      "repository_link": "https://github.com/redis/mcp-redis",
+      "creator_maintainer": "Redis",
+      "installation_instructions": "npm install @redis/mcp-server",
+      "documentation_links": [
+        "https://github.com/redis/mcp-redis"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "stripe": {
+      "name": "Stripe",
+      "description": "Allows you to integrate with Stripe APIs",
+      "category": "Finance",
+      "repository_link": "https://github.com/stripe/agent-toolkit/tree/main",
+      "creator_maintainer": "Stripe",
+      "installation_instructions": "npm install @stripe/mcp-server",
+      "documentation_links": [
+        "https://github.com/stripe/agent-toolkit"
+      ],
+      "popularity_indicators": {
+        "level": "high",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Payment processing",
+        "Financial data analysis",
+        "Transaction management"
+      ],
+      "examples": [
+        "Integrate with Stripe services",
+        "Automate stripe workflows",
+        "Access Stripe data and functionality"
+      ]
+    },
+    "browserbase": {
+      "name": "Browserbase",
+      "description": "Automate browser interactions in the cloud (e.g. web navigation, data extraction, form filling, and more)",
+      "category": "Web Scraping",
+      "repository_link": "https://github.com/browserbase/mcp-server-browserbase",
+      "creator_maintainer": "Browserbase",
+      "installation_instructions": "npm install @browserbase/mcp-server",
+      "documentation_links": [
+        "https://github.com/browserbase/mcp-server-browserbase"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data extraction",
+        "Web automation",
+        "Content crawling"
+      ],
+      "examples": [
+        "Integrate with Browserbase services",
+        "Automate browserbase workflows",
+        "Access Browserbase data and functionality"
+      ]
+    },
+    "e2b": {
+      "name": "E2B",
+      "description": "Run code in secure sandboxes hosted by E2B",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/e2b-dev/mcp-server",
+      "creator_maintainer": "E2B",
+      "installation_instructions": "npm install @e2b/mcp-server",
+      "documentation_links": [
+        "https://github.com/e2b-dev/mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Code management",
+        "Repository operations",
+        "CI/CD automation"
+      ],
+      "examples": [
+        "Integrate with E2B services",
+        "Automate e2b workflows",
+        "Access E2B data and functionality"
+      ]
+    },
+    "linear": {
+      "name": "Linear",
+      "description": "Linear MCP Server. Provides integration with Linear's issue tracking system through MCP",
+      "category": "Productivity",
+      "repository_link": "https://github.com/jerhadf/linear-mcp-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install linear-mcp-server",
+      "documentation_links": [
+        "https://github.com/jerhadf/linear-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Task management",
+        "Workflow automation",
+        "Organization"
+      ],
+      "examples": [
+        "Integrate with Linear services",
+        "Automate linear workflows",
+        "Access Linear data and functionality"
+      ]
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "description": "Obsidian vault integration with tools for file management, search, and content manipulation",
+      "category": "Note Taking",
+      "repository_link": "https://github.com/MarkusPfundstein/mcp-obsidian",
+      "creator_maintainer": "Community",
+      "installation_instructions": "git clone https://github.com/MarkusPfundstein/mcp-obsidian",
+      "documentation_links": [
+        "https://github.com/MarkusPfundstein/mcp-obsidian"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Knowledge management",
+        "Note organization",
+        "Information capture"
+      ],
+      "examples": [
+        "Integrate with Obsidian services",
+        "Automate obsidian workflows",
+        "Access Obsidian data and functionality"
+      ]
+    },
+    "youtube": {
+      "name": "YouTube",
+      "description": "YouTube integration using yt-dlp for subtitle downloading and video analysis",
+      "category": "Media",
+      "repository_link": "https://github.com/anaisbetts/mcp-youtube",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install mcp-youtube",
+      "documentation_links": [
+        "https://github.com/anaisbetts/mcp-youtube"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Content creation",
+        "Media processing",
+        "Entertainment integration"
+      ],
+      "examples": [
+        "Integrate with YouTube services",
+        "Automate youtube workflows",
+        "Access YouTube data and functionality"
+      ]
+    },
+    "excel": {
+      "name": "Excel",
+      "description": "Excel workbook manipulation including data reading/writing, worksheet management, formatting, charts, and pivot tables",
+      "category": "Productivity",
+      "repository_link": "https://github.com/haris-musa/excel-mcp-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install excel-mcp-server",
+      "documentation_links": [
+        "https://github.com/haris-musa/excel-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Task management",
+        "Workflow automation",
+        "Organization"
+      ],
+      "examples": [
+        "Integrate with Excel services",
+        "Automate excel workflows",
+        "Access Excel data and functionality"
+      ]
+    },
+    "todoist": {
+      "name": "Todoist",
+      "description": "An MCP server implementation for Todoist, enabling natural language task management",
+      "category": "Productivity",
+      "repository_link": "https://github.com/abhiz123/todoist-mcp-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install todoist-mcp-server",
+      "documentation_links": [
+        "https://github.com/abhiz123/todoist-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Task management",
+        "Workflow automation",
+        "Organization"
+      ],
+      "examples": [
+        "Integrate with Todoist services",
+        "Automate todoist workflows",
+        "Access Todoist data and functionality"
+      ]
+    },
+    "airtable": {
+      "name": "Airtable",
+      "description": "Read and write access to Airtable databases, with schema inspection",
+      "category": "Databases",
+      "repository_link": "https://github.com/domdomegg/airtable-mcp-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install airtable-mcp-server",
+      "documentation_links": [
+        "https://github.com/domdomegg/airtable-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "duckdb": {
+      "name": "DuckDB",
+      "description": "DuckDB database integration with schema inspection and query capabilities",
+      "category": "Databases",
+      "repository_link": "https://github.com/ktanaka101/mcp-server-duckdb",
+      "creator_maintainer": "Community",
+      "installation_instructions": "git clone https://github.com/ktanaka101/mcp-server-duckdb",
+      "documentation_links": [
+        "https://github.com/ktanaka101/mcp-server-duckdb"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Data analysis",
+        "Query execution",
+        "Schema inspection"
+      ],
+      "examples": [
+        "Execute database queries",
+        "Inspect table schemas",
+        "Analyze data patterns"
+      ]
+    },
+    "qgis": {
+      "name": "QGIS",
+      "description": "connects QGIS Desktop to Claude AI through the MCP. This integration enables prompt-assisted project creation, layer loading, code execution, and more",
+      "category": "GIS",
+      "repository_link": "https://github.com/jjsantos01/qgis_mcp",
+      "creator_maintainer": "Community",
+      "installation_instructions": "QGIS plugin installation",
+      "documentation_links": [
+        "https://github.com/jjsantos01/qgis_mcp"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with QGIS services",
+        "Automate qgis workflows",
+        "Access QGIS data and functionality"
+      ]
+    },
+    "apple_books": {
+      "name": "Apple Books",
+      "description": "Transform your Apple Books to a queryable knowledge base",
+      "category": "Note Taking",
+      "repository_link": "https://github.com/vgnshiyer/apple-books-mcp",
+      "creator_maintainer": "Community",
+      "installation_instructions": "git clone https://github.com/vgnshiyer/apple-books-mcp",
+      "documentation_links": [
+        "https://github.com/vgnshiyer/apple-books-mcp"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Knowledge management",
+        "Note organization",
+        "Information capture"
+      ],
+      "examples": [
+        "Integrate with Apple Books services",
+        "Automate apple books workflows",
+        "Access Apple Books data and functionality"
+      ]
+    },
+    "unity_engine": {
+      "name": "Unity Engine",
+      "description": "Tools for Unity Editor and for a game made with Unity",
+      "category": "Game Development",
+      "repository_link": "https://github.com/IvanMurzak/Unity-MCP",
+      "creator_maintainer": "Community",
+      "installation_instructions": "Unity package installation",
+      "documentation_links": [
+        "https://github.com/IvanMurzak/Unity-MCP"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Unity Engine services",
+        "Automate unity engine workflows",
+        "Access Unity Engine data and functionality"
+      ]
+    },
+    "apple_shortcuts": {
+      "name": "Apple Shortcuts",
+      "description": "An MCP Server Integration with Apple Shortcuts",
+      "category": "System Automation",
+      "repository_link": "https://github.com/recursechat/mcp-server-apple-shortcuts",
+      "creator_maintainer": "Community",
+      "installation_instructions": "git clone https://github.com/recursechat/mcp-server-apple-shortcuts",
+      "documentation_links": [
+        "https://github.com/recursechat/mcp-server-apple-shortcuts"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Apple Shortcuts services",
+        "Automate apple shortcuts workflows",
+        "Access Apple Shortcuts data and functionality"
+      ]
+    },
+    "spotify": {
+      "name": "Spotify",
+      "description": "Connects with Spotify for playback control and track/album/artist/playlist management",
+      "category": "Media",
+      "repository_link": "https://github.com/varunneal/spotify-mcp",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install spotify-mcp",
+      "documentation_links": [
+        "https://github.com/varunneal/spotify-mcp"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "Content creation",
+        "Media processing",
+        "Entertainment integration"
+      ],
+      "examples": [
+        "Integrate with Spotify services",
+        "Automate spotify workflows",
+        "Access Spotify data and functionality"
+      ]
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "description": "TikTok integration for getting post details and video's subtitles",
+      "category": "Social Media",
+      "repository_link": "https://github.com/Seym0n/tiktok-mcp",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install tiktok-mcp",
+      "documentation_links": [
+        "https://github.com/Seym0n/tiktok-mcp"
+      ],
+      "popularity_indicators": {
+        "level": "low",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with TikTok services",
+        "Automate tiktok workflows",
+        "Access TikTok data and functionality"
+      ]
+    },
+    "arxiv": {
+      "name": "ArXiv",
+      "description": "Search ArXiv research papers",
+      "category": "Research",
+      "repository_link": "https://github.com/blazickjp/arxiv-mcp-server",
+      "creator_maintainer": "Community",
+      "installation_instructions": "pip install arxiv-mcp-server",
+      "documentation_links": [
+        "https://github.com/blazickjp/arxiv-mcp-server"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with ArXiv services",
+        "Automate arxiv workflows",
+        "Access ArXiv data and functionality"
+      ]
+    },
+    "kubernetes": {
+      "name": "Kubernetes",
+      "description": "Kubernetes cluster operations through MCP",
+      "category": "DevOps",
+      "repository_link": "https://github.com/strowk/mcp-k8s-go",
+      "creator_maintainer": "Community",
+      "installation_instructions": "go install github.com/strowk/mcp-k8s-go",
+      "documentation_links": [
+        "https://github.com/strowk/mcp-k8s-go"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Kubernetes services",
+        "Automate kubernetes workflows",
+        "Access Kubernetes data and functionality"
+      ]
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Docker container management and operations",
+      "category": "DevOps",
+      "repository_link": "https://github.com/community/docker-mcp",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install docker-mcp",
+      "documentation_links": [
+        "https://github.com/community/docker-mcp"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "General purpose integration",
+        "API interaction",
+        "Data management"
+      ],
+      "examples": [
+        "Integrate with Docker services",
+        "Automate docker workflows",
+        "Access Docker data and functionality"
+      ]
+    },
+    "perplexity": {
+      "name": "Perplexity",
+      "description": "Chat with Perplexity via MCP",
+      "category": "AI Services",
+      "repository_link": "https://github.com/tanigami/mcp-server-perplexity",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install mcp-server-perplexity",
+      "documentation_links": [
+        "https://github.com/tanigami/mcp-server-perplexity"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with Perplexity services",
+        "Automate perplexity workflows",
+        "Access Perplexity data and functionality"
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "description": "Query OpenAI models directly from Claude using MCP protocol",
+      "category": "AI Services",
+      "repository_link": "https://github.com/pierrebrunelle/mcp-server-openai",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install mcp-server-openai",
+      "documentation_links": [
+        "https://github.com/pierrebrunelle/mcp-server-openai"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with OpenAI services",
+        "Automate openai workflows",
+        "Access OpenAI data and functionality"
+      ]
+    },
+    "huggingface_spaces": {
+      "name": "HuggingFace Spaces",
+      "description": "Use HuggingFace spaces from your MCP Client. Supports Images, Audio, Text and more",
+      "category": "AI Services",
+      "repository_link": "https://github.com/evalstate/mcp-hfspace",
+      "creator_maintainer": "Community",
+      "installation_instructions": "npm install mcp-hfspace",
+      "documentation_links": [
+        "https://github.com/evalstate/mcp-hfspace"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with HuggingFace Spaces services",
+        "Automate huggingface spaces workflows",
+        "Access HuggingFace Spaces data and functionality"
+      ]
+    },
+    "llamacloud": {
+      "name": "LlamaCloud",
+      "description": "LlamaCloud MCP Server. A TypeScript-based MCP server connecting to a managed index on LlamaCloud",
+      "category": "AI Services",
+      "repository_link": "https://github.com/run-llama/mcp-server-llamacloud",
+      "creator_maintainer": "LlamaIndex",
+      "installation_instructions": "npm install @llamaindex/mcp-server-llamacloud",
+      "documentation_links": [
+        "https://github.com/run-llama/mcp-server-llamacloud"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with LlamaCloud services",
+        "Automate llamacloud workflows",
+        "Access LlamaCloud data and functionality"
+      ]
+    },
+    "chroma": {
+      "name": "Chroma",
+      "description": "Embeddings, vector search, document storage, and full-text search with the open-source AI application database",
+      "category": "AI Services",
+      "repository_link": "https://github.com/chroma-core/chroma-mcp",
+      "creator_maintainer": "Chroma",
+      "installation_instructions": "pip install chromadb-mcp-server",
+      "documentation_links": [
+        "https://github.com/chroma-core/chroma-mcp"
+      ],
+      "popularity_indicators": {
+        "level": "medium",
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": "2024-2025",
+      "source": "comprehensive_collection",
+      "use_cases": [
+        "AI integration",
+        "Model interaction",
+        "Intelligent processing"
+      ],
+      "examples": [
+        "Integrate with Chroma services",
+        "Automate chroma workflows",
+        "Access Chroma data and functionality"
+      ]
+    }
+  },
+  "popular_servers": [
+    {
+      "name": "AWS KB Retrieval",
+      "description": "Retrieval from AWS Knowledge Base using Bedrock Agent Runtime",
+      "category": "Cloud Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server"
+    },
+    {
+      "name": "Brave Search",
+      "description": "Web and local search using Brave's Search API",
+      "category": "Search & Web",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search"
+    },
+    {
+      "name": "Fetch",
+      "description": "Web content fetching and conversion for efficient LLM usage",
+      "category": "Web Scraping",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch"
+    },
+    {
+      "name": "Filesystem",
+      "description": "Secure file operations with configurable access controls",
+      "category": "File Systems",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem"
+    },
+    {
+      "name": "Git",
+      "description": "Tools to read, search, and manipulate Git repositories",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/git"
+    },
+    {
+      "name": "GitHub",
+      "description": "Repository management, file operations, and GitHub API integration",
+      "category": "Development Tools",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/github"
+    },
+    {
+      "name": "Google Drive",
+      "description": "File access and search capabilities for Google Drive",
+      "category": "Cloud Storage",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive"
+    },
+    {
+      "name": "Memory",
+      "description": "Knowledge graph-based persistent memory system",
+      "category": "AI Services",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "Read-only database access with schema inspection capabilities",
+      "category": "Databases",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres"
+    },
+    {
+      "name": "Puppeteer",
+      "description": "Browser automation and web scraping capabilities",
+      "category": "Web Scraping",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer"
+    }
+  ],
+  "getting_started": {
+    "what_is_mcp": "Model Context Protocol (MCP) is an open standard that enables seamless integration between LLM applications and external data sources and tools.",
+    "installation_guide": "Most MCP servers can be installed via npm, pip, or by cloning their GitHub repositories.",
+    "documentation": "https://modelcontextprotocol.io/introduction"
+  }
+}

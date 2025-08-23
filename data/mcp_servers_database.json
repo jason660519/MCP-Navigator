@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "total_servers": 17,
+    "categories": [
+      "Development Tools",
+      "Communication",
+      "Web & Search",
+      "Cloud Services",
+      "AI & ML",
+      "File Systems",
+      "Databases",
+      "Official Reference"
+    ],
+    "collection_date": "2025-05-26",
+    "sources": [
+      "modelcontextprotocol.io/examples"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Web & Search",
+      "count": 5,
+      "description": "MCPs for web & search",
+      "icon": "🔍",
+      "servers": [
+        "google_drive",
+        "git",
+        "brave_search",
+        "fetch",
+        "puppeteer"
+      ]
+    },
+    {
+      "name": "API & Integration",
+      "count": 4,
+      "description": "MCPs for api & integration",
+      "icon": "🔗",
+      "servers": [
+        "github",
+        "gitlab",
+        "brave_search",
+        "puppeteer"
+      ]
+    },
+    {
+      "name": "File Systems",
+      "count": 3,
+      "description": "MCPs for file systems",
+      "icon": "📁",
+      "servers": [
+        "filesystem",
+        "google_drive",
+        "github"
+      ]
+    },
+    {
+      "name": "Development Tools",
+      "count": 3,
+      "description": "MCPs for development tools",
+      "icon": "⚒️",
+      "servers": [
+        "git",
+        "github",
+        "gitlab"
+      ]
+    },
+    {
+      "name": "AI & ML",
+      "count": 3,
+      "description": "MCPs for ai & ml",
+      "icon": "🤖",
+      "servers": [
+        "fetch",
+        "google_maps",
+        "everart"
+      ]
+    },
+    {
+      "name": "Databases",
+      "count": 2,
+      "description": "MCPs for databases",
+      "icon": "🗄️",
+      "servers": [
+        "postgresql",
+        "sqlite"
+      ]
+    },
+    {
+      "name": "Media & Content",
+      "count": 2,
+      "description": "MCPs for media & content",
+      "icon": "🎬",
+      "servers": [
+        "fetch",
+        "everart"
+      ]
+    },
+    {
+      "name": "Cloud Services",
+      "count": 1,
+      "description": "MCPs for cloud services",
+      "icon": "☁️",
+      "servers": [
+        "aws_kb_retrieval"
+      ]
+    },
+    {
+      "name": "Communication",
+      "count": 1,
+      "description": "MCPs for communication",
+      "icon": "💬",
+      "servers": [
+        "slack"
+      ]
+    },
+    {
+      "name": "Security & Monitoring",
+      "count": 1,
+      "description": "MCPs for security & monitoring",
+      "icon": "🔒",
+      "servers": [
+        "sentry"
+      ]
+    },
+    {
+      "name": "Productivity",
+      "count": 0,
+      "description": "MCPs for productivity",
+      "icon": "📋",
+      "servers": []
+    },
+    {
+      "name": "Finance & Crypto",
+      "count": 0,
+      "description": "MCPs for finance & crypto",
+      "icon": "💰",
+      "servers": []
+    }
+  ],
+  "servers": {
+    "filesystem": {
+      "name": "Filesystem",
+      "description": "Secure file operations with configurable access controls",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "postgresql": {
+      "name": "PostgreSQL",
+      "description": "Read-only database access with schema inspection capabilities",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "description": "Database interaction and business intelligence features",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "google_drive": {
+      "name": "Google Drive",
+      "description": "File access and search capabilities for Google Drive",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "git": {
+      "name": "Git",
+      "description": "Tools to read, search, and manipulate Git repositories",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "Repository management, file operations, and GitHub API integration",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "description": "GitLab API integration enabling project management",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "sentry": {
+      "name": "Sentry",
+      "description": "Retrieving and analyzing issues from Sentry.io",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "brave_search": {
+      "name": "Brave Search",
+      "description": "Web and local search using Brave’s Search API",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "fetch": {
+      "name": "Fetch",
+      "description": "Web content fetching and conversion optimized for LLM usage",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "description": "Browser automation and web scraping capabilities",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "slack": {
+      "name": "Slack",
+      "description": "Channel management and messaging capabilities",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "google_maps": {
+      "name": "Google Maps",
+      "description": "Location services, directions, and place details",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "memory": {
+      "name": "Memory",
+      "description": "Knowledge graph-based persistent memory system",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": [],
+      "sources": [
+        "modelcontextprotocol.io/examples",
+        "official"
+      ]
+    },
+    "everart": {
+      "name": "EverArt",
+      "description": "AI image generation using various models",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "sequential_thinking": {
+      "name": "Sequential Thinking",
+      "description": "Dynamic problem-solving through thought sequences",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    },
+    "aws_kb_retrieval": {
+      "name": "AWS KB Retrieval",
+      "description": "Retrieval from AWS Knowledge Base using Bedrock Agent Runtime",
+      "category": "Official Reference",
+      "repository_link": "https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server",
+      "source": "modelcontextprotocol.io/examples",
+      "installation_method": "git_clone",
+      "popularity_indicators": {
+        "github_stars": null,
+        "npm_downloads": null,
+        "community_mentions": 0
+      },
+      "last_updated": null,
+      "creator_maintainer": "modelcontextprotocol",
+      "documentation_links": [],
+      "usage_examples": []
+    }
+  }
+}

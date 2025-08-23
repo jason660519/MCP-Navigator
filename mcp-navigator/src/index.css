@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    
+    /* Primary colors */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary colors */
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Background colors */
+    --background: 210 20% 98%;
+    --foreground: 224 71% 4%;
+    
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    
+    /* Accent colors */
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  .dark {
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
+    
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer components {
+  .prose :where(h1, h2, h3, h4) {
+    @apply font-bold text-gray-900 mb-4;
+  }
+  
+  .prose :where(p) {
+    @apply text-gray-700 mb-4;
+  }
+  
+  .prose :where(ul, ol) {
+    @apply pl-5 mb-4 space-y-2;
+  }
+  
+  .prose :where(li) {
+    @apply text-gray-700;
+  }
+  
+  .prose :where(a) {
+    @apply text-blue-600 hover:underline;
+  }
+  
+  .prose :where(blockquote) {
+    @apply pl-4 border-l-4 border-gray-300 text-gray-700 italic;
+  }
+}
+
