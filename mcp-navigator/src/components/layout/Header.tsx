@@ -109,6 +109,9 @@ export default function Header() {
             <Link to="/about" className="text-gray-300 hover:text-white transition">
               About
             </Link>
+            <Link to="/contact" className="text-gray-300 hover:text-white transition">
+              Contact Us
+            </Link>
           </nav>
 
           {/* Search Box (Desktop) */}
@@ -254,6 +257,13 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                to="/contact"
+                className="text-gray-300 hover:text-white transition py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
               </Link>
             </nav>
           </div>

@@ -8,6 +8,7 @@ import CategoriesPage from './components/pages/CategoriesPage';
 import CategoryPage from './components/pages/CategoryPage';
 import MCPDetailPage from './components/pages/MCPDetailPage';
 import AboutPage from './components/pages/AboutPage';
+import ContactPage from './components/pages/ContactPage';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/category/:categorySlug" element={<CategoryPage />} />
             <Route path="/mcp/:mcpSlug" element={<MCPDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
           </main>
           
