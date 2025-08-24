@@ -1,0 +1,158 @@
+---
+title: "別讓你的 Docker 容器變成黑客的遊樂場！"
+description: "五分鐘教你鎖好 Playwright 的大門，學習如何在 Docker 中安全地運行 Playwright"
+---
+
+# 別讓你的 Docker 容器變成黑客的遊樂場！
+
+## 五分鐘教你鎖好 Playwright 的大門
+
+朋友，你是不是也這樣？興高采烈地寫好了 Playwright 爬蟲或測試腳本，隨手就寫了個 Dockerfile：
+
+```dockerfile
+FROM mcr.microsoft.com/playwright:v1.55.0-noble
+COPY . .
+RUN npm install
+CMD ["npx", "playwright", "test"]
+```
+
+然後…**你就為黑客先生開了一扇暢行無阻的豪華大門！** 🚨
+
+別緊張，我跟你一樣，一開始也覺得「哎呦，在容器裡嘛，出事也不會影響我本機，沒差啦～」。
+
+直到我發現，**以 root 身份跑瀏覽器，簡直就是把家門鑰匙插在門上還順便貼了張「歡迎光臨」的紙條**。
+
+今天，就讓我們花五分鐘，把這扇門狠狠鎖上。這不是什麼硬核教學，而是你未來能安心睡覺的保命符。
+
+---
+
+## 🚨 為什麼「預設值」等於「不安全」？
+
+Docker 為了方便，**預設就是用 root 老大**來運行容器裡的所有東西。這意味著：
+
+### 🛡️ 你的 Chromium 沙箱失效了
+
+沙箱是瀏覽器最重要的保鑣，它的工作就是把你逛的網頁關在玻璃屋裡，不讓它亂搞你的系統。
+
+但 root 老大太霸氣了，保鑣不敢限制他，只好辭職不幹（自動禁用）。
+
+### 💀 如果網頁有惡意程式
+
+它有可能利用漏洞，在容器裡**以 root 權限為所欲為**。
+
+雖然在容器內，但誰想讓不速之客在自己家裡開派對呢？
+
+> **💡 「可是我只是爬公開資料啊？」**
+> 
+> 正是因為你爬的網站你無法 100% 控制，才更應該做好防護！
+> 
+> 你永遠不知道那個網站今天是不是被駭了。
+
+---
+
+## ✨ 魔法防護咒語：請一個非 root 保鑣
+
+解決方法超簡單，就是在你的 Dockerfile 裡請一位權限有限的「保鑣使用者」來幫你跑程式。
+
+以後出事，黑客也只能指揮這個保鑣，動不了你的核心寶藏。
+
+### ❌ 你的舊 Dockerfile（黑客最愛款）
+
+```dockerfile
+FROM mcr.microsoft.com/playwright:v1.55.0-noble
+WORKDIR /app
+COPY . .
+RUN npm install # 以 root 身份安裝
+CMD ["npx", "playwright", "test"] # 以 root 身份執行，危險！
+```
+
+### ✅ 你的新 Dockerfile（安全帥氣款）
+
+```dockerfile
+FROM mcr.microsoft.com/playwright:v1.55.0-noble
+WORKDIR /app
+COPY . .
+
+# 先讓 root 老大把髒活累活幹完（安裝套件需要權限）
+RUN npm install
+
+# 重點來了！魔法咒語開始：
+# 1. 建立一個系統使用者組和使用者，取名 'pwuser'
+# 2. 順便把它加到 audio、video 組，以防你需要音訊/影片（例如爬Youtube）
+RUN groupadd -r pwuser && useradd -r -g pwuser -G audio,video pwuser \
+    # 3. 幫他建一個下載資料夾（Playwright 可能需要）
+    && mkdir -p /home/pwuser/Downloads \
+    # 4. 把家目錄和應用目錄的鑰匙交給這個保鑣
+    && chown -R pwuser:pwuser /home/pwuser \
+    && chown -R pwuser:pwuser /app
+
+# 5. 最重要的儀式：交棒！從此以後，所有指令由保鑣 'pwuser' 執行
+USER pwuser
+
+# 現在可以安心執行了！
+CMD ["npx", "playwright", "test"]
+```
+
+---
+
+## 🔍 這串咒語做了什麼？
+
+| 指令 | 功能說明 |
+|------|----------|
+| `groupadd -r pwuser` | 建立一個系統使用者組 |
+| `useradd -r -g pwuser` | 建立一個系統使用者，並加入上面那個組 |
+| `-G audio,video` | 讓這個使用者也能存取音訊和影片設備（如果需要的話） |
+| `chown -R pwuser:pwuser /app` | 把你程式碼目錄的擁有權從 root 移交給 `pwuser`，這樣他才有權讀寫 |
+| `USER pwuser` | ✨ **魔法開關！** ✨ 從這行開始，後面所有的指令（包括 `CMD`）都會用這個無權無勢的小保鑣來執行 |
+
+---
+
+## 💻 我知道你在想什麼…「我在 Windows 也適用嗎？」
+
+**當然適用！**
+
+你在 Windows 上跑的 Docker 容器，其實是躲在一個叫 WSL2 的**小 Linux 虛擬機器**裡運行的。
+
+所以容器裡面根本就是個 Linux 系統，所有關於權限的規則**一模一樣**！你一樣需要這道護身符。
+
+---
+
+## 📋 總結：養成好習慣，爬蟲沒煩惱
+
+記住這個簡單的決策流程：
+
+<div className="mermaid">
+  {`
+    flowchart TD
+        A["我要寫 Dockerfile 了"] --> B{"裡面跑的程式信任嗎?"}
+        
+        B -- "信任<br>e.g., 自己的測試" --> C["懶人法：用 root 跑<br>但要知道風險"] 
+        B -- "不信任<br>e.g., 網路爬蟲" --> D["好習慣：建非 root 使用者"] 
+        
+        D --> E["睡覺睡得安穩❤️"] 
+        C --> F["偶爾擔心被駭😅"] 
+        
+        style E fill:#cfc,stroke-width:0px 
+        style F fill:#fcf,stroke-width:0px
+  `}
+</div>
+
+---
+
+## 🎯 行動指南
+
+養成習慣，以後寫 Dockerfile 時，順手加上那幾行魔法咒語。
+
+這就像你出門會記得鎖門一樣，是一個簡單卻能讓你**高枕無憂**的小動作。
+
+---
+
+## 🛡️ 結語
+
+**現在，你的容器不再是遊樂場，而是一座堅固的堡壘了！**
+
+快去升級你的 Dockerfile 吧！
+
+---
+
+*記住：安全不是一次性的設定，而是一種習慣。每次寫 Dockerfile 都要想想：「這個容器夠安全嗎？」*
