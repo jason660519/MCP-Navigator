@@ -1,3 +1,8 @@
+---
+title: "別讓你的 Docker 容器變成黑客的遊樂場！五分鐘教你鎖好 Playwright 的大門"
+description: "學習如何在 Docker 中安全地運行 Playwright，避免安全風險"
+---
+
 # 別讓你的 Docker 容器變成黑客的遊樂場！五分鐘教你鎖好 Playwright 的大門
 
 朋友，你是不是也這樣？興高采烈地寫好了 Playwright 爬蟲或測試腳本，隨手就寫了個 Dockerfile：
@@ -83,19 +88,21 @@ CMD ["npx", "playwright", "test"]
 
 記住這個簡單的決策流程：
 
-```mermaid
-flowchart TD
-    A["我要寫 Dockerfile 了"] --> B{"裡面跑的程式信任嗎?"}
-    
-    B -- "信任<br>e.g., 自己的測試" --> C["懶人法：用 root 跑<br>但要知道風險"] 
-    B -- "不信任<br>e.g., 網路爬蟲" --> D["好習慣：建非 root 使用者"] 
-    
-    D --> E["睡覺睡得安穩❤️"] 
-    C --> F["偶爾擔心被駭😅"] 
-    
-    style E fill:#cfc,stroke-width:0px 
-    style F fill:#fcf,stroke-width:0px
-```
+<div className="mermaid">
+  {`
+    flowchart TD
+        A["我要寫 Dockerfile 了"] --> B{"裡面跑的程式信任嗎?"}
+        
+        B -- "信任<br>e.g., 自己的測試" --> C["懶人法：用 root 跑<br>但要知道風險"] 
+        B -- "不信任<br>e.g., 網路爬蟲" --> D["好習慣：建非 root 使用者"] 
+        
+        D --> E["睡覺睡得安穩❤️"] 
+        C --> F["偶爾擔心被駭😅"] 
+        
+        style E fill:#cfc,stroke-width:0px 
+        style F fill:#fcf,stroke-width:0px
+  `}
+</div>
 
 養成習慣，以後寫 Dockerfile 時，順手加上那幾行魔法咒語。這就像你出門會記得鎖門一樣，是一個簡單卻能讓你 **高枕無憂** 的小動作。
 
