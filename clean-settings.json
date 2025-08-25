@@ -1,0 +1,57 @@
+{
+  "debug.disassemblyView.showSourceCode": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "workbench.editorAssociations": {
+    "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.tc.json": "default",
+    "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
+  "editor.lineNumbers": "on",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "cline.chromeExecutablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.mdx": "mdx",
+    "*.json": "jsonc"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "docker.extension.enableComposeLanguageServer": false,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "workbench.statusBar.visible": false,
+  "workbench.colorTheme": "One Dark Modern",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "yaml.schemas": {
+    "file:///c%3A/Users/a0922/.trae/extensions/continue.continue-1.2.0-win32-x64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
+  },
+  "AI.toolcall.confirmMode": "autoRun",
+  "redhat.telemetry.enabled": false,
+  "extensions.ignoreRecommendations": false,
+  "emmet.includeLanguages": {
+    "mdx": "html"
+  },
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.mermaidTheme": "default"
+}

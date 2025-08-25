@@ -1,7 +1,61 @@
 #!/usr/bin/env python3
 """
-Comprehensive MCP Collector
-Collects detailed information about 50+ MCP servers from multiple sources
+=============================================================================
+                    MCP Navigator - 綜合數據收集器
+=============================================================================
+
+檔案用途：
+    這是 MCP Navigator 專案的核心數據收集腳本，負責從多個來源收集、整理和
+    標準化 Model Context Protocol (MCP) 服務器的詳細資訊。該腳本會生成
+    包含 50+ 個 MCP 服務器的綜合目錄，供網站使用。
+
+主要功能：
+    • 收集官方和社群 MCP 服務器資訊
+    • 自動分類和標籤化服務器
+    • 生成標準化的 JSON 數據格式
+    • 提供安裝指南和使用範例
+    • 計算流行度指標和統計資料
+
+必要依賴項：
+    Python 3.7+ 及以下標準庫模組：
+    - json: JSON 數據處理
+    - os: 作業系統介面
+    - pathlib: 路徑操作
+    - typing: 類型提示
+    - re: 正則表達式
+
+安裝步驟：
+    1. 確保 Python 3.7+ 已安裝
+    2. 無需額外安裝依賴（僅使用標準庫）
+    3. 直接執行腳本：python comprehensive_mcp_collector.py
+
+重要參數說明：
+    • output_file: 輸出 JSON 檔案路徑（預設：comprehensive_mcp_directory.json）
+    • categories: 自動生成的服務器分類系統
+    • popularity_indicators: 流行度評估指標
+    • metadata: 包含數據來源和統計資訊的元數據
+
+輸出格式：
+    生成包含以下結構的 JSON 檔案：
+    {
+        "metadata": {...},           # 元數據和統計資訊
+        "categories": [...],         # 分類列表和計數
+        "servers": {...}             # 服務器詳細資訊
+    }
+
+使用範例：
+    # 基本使用
+    python comprehensive_mcp_collector.py
+    
+    # 程式化使用
+    from comprehensive_mcp_collector import ComprehensiveMCPCollector
+    collector = ComprehensiveMCPCollector()
+    data = collector.export_comprehensive_data('output.json')
+
+作者：MCP Navigator 專案團隊
+版本：1.0.0
+最後更新：2025-01-15
+=============================================================================
 """
 
 import json
@@ -728,7 +782,7 @@ def main():
     collector.load_comprehensive_server_list()
     
     print("💾 Exporting data...")
-    output_file = '/workspace/data/comprehensive_mcp_directory.json'
+    output_file = 'data/comprehensive_mcp_directory.json'
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     export_data = collector.export_comprehensive_data(output_file)

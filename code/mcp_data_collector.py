@@ -1,7 +1,72 @@
 #!/usr/bin/env python3
 """
-MCP Data Collector
-Systematically collects and organizes MCP server information from multiple sources
+=============================================================================
+                    MCP Navigator - 基礎數據收集器
+=============================================================================
+
+檔案用途：
+    這是 MCP Navigator 專案的基礎數據收集腳本，負責從多個來源系統性地
+    收集和整理 Model Context Protocol (MCP) 服務器資訊。此腳本是數據
+    收集流程的第一階段，為後續的綜合數據處理提供基礎數據。
+
+主要功能：
+    • 從瀏覽器提取的內容中解析 MCP 服務器資訊
+    • 載入官方範例和文檔數據
+    • 自動分類和標籤化服務器
+    • 生成基礎的 JSON 數據格式
+    • 提供手動添加服務器的介面
+    • 創建分類系統和圖標映射
+
+必要依賴項：
+    Python 3.7+ 及以下標準庫模組：
+    - json: JSON 數據處理
+    - os: 作業系統介面和檔案操作
+    - pathlib: 現代路徑操作
+    - typing: 類型提示支援
+    - re: 正則表達式處理
+
+安裝步驟：
+    1. 確保 Python 3.7+ 已安裝
+    2. 無需額外安裝依賴（僅使用標準庫）
+    3. 準備數據來源檔案：
+       - browser/extracted_content/mcp_servers_complete_list.md
+       - docs/mcp_examples.md
+    4. 執行腳本：python mcp_data_collector.py
+
+重要參數說明：
+    • mcp_servers: 主要的服務器數據字典
+    • categories: 自動發現的分類集合
+    • sources: 數據來源追蹤字典
+    • output_file: 輸出 JSON 檔案路徑（預設：mcp_servers_database.json）
+
+數據來源：
+    1. 瀏覽器提取內容（Markdown 格式）
+    2. 官方範例文檔（JSON 格式）
+    3. 手動添加的服務器列表
+    4. GitHub 倉庫資訊自動提取
+
+輸出格式：
+    生成包含以下結構的 JSON 檔案：
+    {
+        "metadata": {...},           # 收集統計和來源資訊
+        "categories": [...],         # 分類列表和圖標
+        "servers": {...}             # 服務器詳細資訊
+    }
+
+使用範例：
+    # 基本使用
+    python mcp_data_collector.py
+    
+    # 程式化使用
+    from mcp_data_collector import MCPDataCollector
+    collector = MCPDataCollector()
+    collector.load_browser_extracted_data()
+    collector.export_to_json('output.json')
+
+作者：MCP Navigator 專案團隊
+版本：1.0.0
+最後更新：2025-01-15
+=============================================================================
 """
 
 import json
@@ -18,7 +83,7 @@ class MCPDataCollector:
         
     def load_browser_extracted_data(self):
         """Load data from browser extracted content"""
-        browser_file = "/workspace/browser/extracted_content/mcp_servers_complete_list.md"
+        browser_file = "browser/extracted_content/mcp_servers_complete_list.md"
         if os.path.exists(browser_file):
             with open(browser_file, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -27,7 +92,7 @@ class MCPDataCollector:
                 
     def load_examples_data(self):
         """Load official examples data"""
-        examples_file = "/workspace/docs/mcp_examples.md"
+        examples_file = "docs/mcp_examples.md"
         if os.path.exists(examples_file):
             try:
                 with open(examples_file, 'r', encoding='utf-8') as f:
@@ -346,7 +411,7 @@ def main():
         collector._add_server(**server)
     
     # Export data
-    output_file = '/workspace/data/mcp_servers_database.json'
+    output_file = 'data/mcp_servers_database.json'
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     export_data = collector.export_to_json(output_file)
