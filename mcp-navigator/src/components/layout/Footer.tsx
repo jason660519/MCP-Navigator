@@ -1,10 +1,32 @@
 import { Link } from 'react-router-dom';
 import { useMCP } from '../../context/MCPContext';
 import { slugify } from '../../lib/utils';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
   const { mcpData } = useMCP();
   const currentYear = new Date().getFullYear();
+  const [lastUpdated, setLastUpdated] = useState<string>('2025-08-24');
+
+  // 獲取 git 最後提交時間
+  useEffect(() => {
+    const getLastCommitDate = async () => {
+      try {
+        // 嘗試從 GitHub API 獲取最後提交時間
+        const response = await fetch('https://api.github.com/repos/jason660519/MCP-Navigator/commits/master');
+        if (response.ok) {
+          const data = await response.json();
+          const commitDate = new Date(data.commit.committer.date);
+          setLastUpdated(commitDate.toISOString().split('T')[0]);
+        }
+      } catch (error) {
+        console.log('無法獲取最後提交時間，使用預設值');
+        // 保持預設值
+      }
+    };
+
+    getLastCommitDate();
+  }, []);
 
   // Get some featured categories
   const featuredCategories = mcpData?.categories.slice(0, 6) || [];
@@ -101,7 +123,7 @@ export default function Footer() {
               </li>
               <li className="text-gray-400">
                 <span className="font-medium">Last Updated:</span>{' '}
-                2025-08-24
+                {lastUpdated}
               </li>
             </ul>
           </div>

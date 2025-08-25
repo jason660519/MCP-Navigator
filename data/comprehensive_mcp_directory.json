@@ -42,19 +42,6 @@
       ]
     },
     {
-      "name": "Development Tools",
-      "count": 4,
-      "description": "Code management, version control, CI/CD automation",
-      "icon": "⚒️",
-      "color": "#FF9800",
-      "servers": [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "E2B"
-      ]
-    },
-    {
       "name": "Productivity",
       "count": 4,
       "description": "Task management, workflow automation, organization",
@@ -65,6 +52,19 @@
         "Linear",
         "Excel",
         "Todoist"
+      ]
+    },
+    {
+      "name": "Development Tools",
+      "count": 4,
+      "description": "Code management, version control, CI/CD automation",
+      "icon": "⚒️",
+      "color": "#FF9800",
+      "servers": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "E2B"
       ]
     },
     {
@@ -91,6 +91,17 @@
       ]
     },
     {
+      "name": "Media",
+      "count": 2,
+      "description": "Content creation, media processing, entertainment",
+      "icon": "🎬",
+      "color": "#E91E63",
+      "servers": [
+        "YouTube",
+        "Spotify"
+      ]
+    },
+    {
       "name": "Note Taking",
       "count": 2,
       "description": "Knowledge management, note organization, information capture",
@@ -113,24 +124,33 @@
       ]
     },
     {
-      "name": "Media",
-      "count": 2,
-      "description": "Content creation, media processing, entertainment",
-      "icon": "🎬",
-      "color": "#E91E63",
-      "servers": [
-        "YouTube",
-        "Spotify"
-      ]
-    },
-    {
-      "name": "Cloud Storage",
+      "name": "Monitoring",
       "count": 1,
-      "description": "Cloud Storage related integrations and tools",
+      "description": "Monitoring related integrations and tools",
       "icon": "📦",
       "color": "#757575",
       "servers": [
-        "Google Drive"
+        "Sentry"
+      ]
+    },
+    {
+      "name": "Location Services",
+      "count": 1,
+      "description": "Location Services related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Google Maps"
+      ]
+    },
+    {
+      "name": "Finance",
+      "count": 1,
+      "description": "Payment processing, financial data, transaction management",
+      "icon": "💰",
+      "color": "#FFC107",
+      "servers": [
+        "Stripe"
       ]
     },
     {
@@ -154,63 +174,13 @@
       ]
     },
     {
-      "name": "Communication",
+      "name": "Cloud Storage",
       "count": 1,
-      "description": "Team collaboration, messaging, notifications",
-      "icon": "💬",
-      "color": "#00BCD4",
-      "servers": [
-        "Slack"
-      ]
-    },
-    {
-      "name": "Game Development",
-      "count": 1,
-      "description": "Game Development related integrations and tools",
+      "description": "Cloud Storage related integrations and tools",
       "icon": "📦",
       "color": "#757575",
       "servers": [
-        "Unity Engine"
-      ]
-    },
-    {
-      "name": "System Automation",
-      "count": 1,
-      "description": "System Automation related integrations and tools",
-      "icon": "📦",
-      "color": "#757575",
-      "servers": [
-        "Apple Shortcuts"
-      ]
-    },
-    {
-      "name": "GIS",
-      "count": 1,
-      "description": "GIS related integrations and tools",
-      "icon": "📦",
-      "color": "#757575",
-      "servers": [
-        "QGIS"
-      ]
-    },
-    {
-      "name": "Search & Web",
-      "count": 1,
-      "description": "Web search, information retrieval, browser automation",
-      "icon": "🔍",
-      "color": "#795548",
-      "servers": [
-        "Brave Search"
-      ]
-    },
-    {
-      "name": "Finance",
-      "count": 1,
-      "description": "Payment processing, financial data, transaction management",
-      "icon": "💰",
-      "color": "#FFC107",
-      "servers": [
-        "Stripe"
+        "Google Drive"
       ]
     },
     {
@@ -224,6 +194,46 @@
       ]
     },
     {
+      "name": "System Automation",
+      "count": 1,
+      "description": "System Automation related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Apple Shortcuts"
+      ]
+    },
+    {
+      "name": "Search & Web",
+      "count": 1,
+      "description": "Web search, information retrieval, browser automation",
+      "icon": "🔍",
+      "color": "#795548",
+      "servers": [
+        "Brave Search"
+      ]
+    },
+    {
+      "name": "GIS",
+      "count": 1,
+      "description": "GIS related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "QGIS"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "count": 1,
+      "description": "Game Development related integrations and tools",
+      "icon": "📦",
+      "color": "#757575",
+      "servers": [
+        "Unity Engine"
+      ]
+    },
+    {
       "name": "Social Media",
       "count": 1,
       "description": "Social Media related integrations and tools",
@@ -234,23 +244,13 @@
       ]
     },
     {
-      "name": "Location Services",
+      "name": "Communication",
       "count": 1,
-      "description": "Location Services related integrations and tools",
-      "icon": "📦",
-      "color": "#757575",
+      "description": "Team collaboration, messaging, notifications",
+      "icon": "💬",
+      "color": "#00BCD4",
       "servers": [
-        "Google Maps"
-      ]
-    },
-    {
-      "name": "Monitoring",
-      "count": 1,
-      "description": "Monitoring related integrations and tools",
-      "icon": "📦",
-      "color": "#757575",
-      "servers": [
-        "Sentry"
+        "Slack"
       ]
     }
   ],
