@@ -32,7 +32,7 @@ export default function AboutPage() {
           
           <h2>Data Sources & Transparency</h2>
           <p className="mb-6">
-            我們致力於提供透明、可靠的 MCP 服務器信息。以下是我們數據收集和驗證的詳細說明：
+            We are committed to providing transparent and reliable MCP server information. Below are the detailed explanations of our data collection and verification processes:
           </p>
           <DataSources 
             sources={mcpData?.metadata.sources} 

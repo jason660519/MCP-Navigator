@@ -15,37 +15,37 @@ interface DataSourcesProps {
 }
 
 /**
- * DataSources 組件 - 展示 MCP 數據的來源信息
- * 提供數據透明度和可信度信息
+ * DataSources component - Display MCP data source information
+ * Provides data transparency and reliability information
  */
 export default function DataSources({ sources = [], showDetails = true }: DataSourcesProps) {
-  // 預定義的數據來源信息
+  // Predefined data source information
   const dataSources: DataSource[] = [
     {
-      name: 'Anthropic 官方 MCP 服務器倉庫',
+      name: 'Official Anthropic MCP Server Repository',
       url: 'https://github.com/modelcontextprotocol/servers',
       type: 'official',
       reliability: 'high',
-      description: 'Anthropic 維護的官方 MCP 服務器參考實現和示例'
+      description: 'Official MCP server reference implementations and examples maintained by Anthropic'
     },
     {
-      name: 'MCP 官方文檔和示例',
+      name: 'Official MCP Documentation and Examples',
       url: 'https://modelcontextprotocol.io/examples',
       type: 'official',
       reliability: 'high',
-      description: '官方文檔中提供的 MCP 服務器示例和最佳實踐'
+      description: 'MCP server examples and best practices provided in official documentation'
     },
     {
-      name: '社區精選列表',
+      name: 'Community Curated Lists',
       type: 'community',
       reliability: 'medium',
-      description: '來自開發者社區的精選 MCP 服務器列表和推薦'
+      description: 'Curated MCP server lists and recommendations from the developer community'
     },
     {
-      name: 'GitHub 倉庫分析',
+      name: 'GitHub Repository Analysis',
       type: 'research',
       reliability: 'medium',
-      description: '通過分析 GitHub 上的 MCP 相關項目收集的數據'
+      description: 'Data collected through analysis of MCP-related projects on GitHub'
     }
   ];
 
@@ -69,44 +69,44 @@ export default function DataSources({ sources = [], showDetails = true }: DataSo
 
   const getReliabilityText = (reliability: string) => {
     switch (reliability) {
-      case 'high': return '高可信度';
-      case 'medium': return '中等可信度';
-      case 'low': return '低可信度';
-      default: return '未知';
+      case 'high': return 'High Reliability';
+      case 'medium': return 'Medium Reliability';
+      case 'low': return 'Low Reliability';
+      default: return 'Unknown';
     }
   };
 
   return (
     <div className="space-y-6">
-      {/* 數據收集概述 */}
+      {/* Data Collection Overview */}
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
         <div className="flex items-center mb-4">
           <Database className="h-6 w-6 text-blue-600 mr-2" />
-          <h3 className="text-lg font-semibold text-blue-900">數據收集方法</h3>
+          <h3 className="text-lg font-semibold text-blue-900">Data Collection Methods</h3>
         </div>
         <p className="text-blue-800 mb-4">
-          我們的 MCP 服務器目錄通過多源數據收集和驗證流程構建，確保信息的準確性和完整性。
+          Our MCP server directory is built through multi-source data collection and verification processes, ensuring information accuracy and completeness.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
           <div className="flex items-center">
             <Shield className="h-5 w-5 text-blue-600 mr-2" />
-            <span className="text-blue-800">多重來源驗證</span>
+            <span className="text-blue-800">Multi-source Verification</span>
           </div>
           <div className="flex items-center">
             <Clock className="h-5 w-5 text-blue-600 mr-2" />
-            <span className="text-blue-800">定期更新維護</span>
+            <span className="text-blue-800">Regular Updates</span>
           </div>
           <div className="flex items-center">
             <Database className="h-5 w-5 text-blue-600 mr-2" />
-            <span className="text-blue-800">標準化數據結構</span>
+            <span className="text-blue-800">Standardized Data Structure</span>
           </div>
         </div>
       </div>
 
-      {/* 詳細數據來源列表 */}
+      {/* Detailed Data Sources List */}
       {showDetails && (
         <div>
-          <h3 className="text-lg font-semibold mb-4">數據來源詳情</h3>
+          <h3 className="text-lg font-semibold mb-4">Data Source Details</h3>
           <div className="space-y-4">
             {dataSources.map((source, index) => (
               <div key={index} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
@@ -142,10 +142,10 @@ export default function DataSources({ sources = [], showDetails = true }: DataSo
         </div>
       )}
 
-      {/* 簡化版本 - 僅顯示來源鏈接 */}
+      {/* Simplified Version - Show Source Links Only */}
       {!showDetails && sources.length > 0 && (
         <div>
-          <h3 className="text-lg font-semibold mb-3">主要數據來源</h3>
+          <h3 className="text-lg font-semibold mb-3">Primary Data Sources</h3>
           <ul className="space-y-2">
             {sources.map((source, index) => (
               <li key={index} className="flex items-center">
@@ -169,24 +169,24 @@ export default function DataSources({ sources = [], showDetails = true }: DataSo
         </div>
       )}
 
-      {/* 數據質量保證 */}
+      {/* Data Quality Assurance */}
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-        <h4 className="font-medium text-gray-900 mb-2">數據質量保證</h4>
+        <h4 className="font-medium text-gray-900 mb-2">Data Quality Assurance</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
           <div>
-            <strong>驗證流程：</strong>
+            <strong>Verification Process:</strong>
             <ul className="mt-1 space-y-1">
-              <li>• 多源交叉驗證</li>
-              <li>• 官方文檔確認</li>
-              <li>• 社區反饋整合</li>
+              <li>• Multi-source cross-verification</li>
+              <li>• Official documentation confirmation</li>
+              <li>• Community feedback integration</li>
             </ul>
           </div>
           <div>
-            <strong>更新機制：</strong>
+            <strong>Update Mechanism:</strong>
             <ul className="mt-1 space-y-1">
-              <li>• 定期自動掃描</li>
-              <li>• 手動質量審核</li>
-              <li>• 即時錯誤修正</li>
+              <li>• Regular automated scanning</li>
+              <li>• Manual quality review</li>
+              <li>• Real-time error correction</li>
             </ul>
           </div>
         </div>
