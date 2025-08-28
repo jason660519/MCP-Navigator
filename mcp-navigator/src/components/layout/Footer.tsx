@@ -8,12 +8,13 @@ export default function Footer() {
 
   // 獲取建置時間，如果沒有則使用當前時間
   const buildTime = import.meta.env.VITE_BUILD_TIME || new Date().toISOString();
-  const lastUpdated = new Date(buildTime).toLocaleString('zh-TW', {
+  const lastUpdated = new Date(buildTime).toLocaleString('en-US', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
     hour: '2-digit',
     minute: '2-digit',
+    hour12: true,
     timeZone: 'Asia/Taipei'
   });
 
