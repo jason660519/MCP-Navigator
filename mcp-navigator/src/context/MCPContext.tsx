@@ -21,7 +21,9 @@ export function MCPProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/data/comprehensive_mcp_directory.json');
+        // 獲取正確的 base URL，支援 GitHub Pages 部署
+        const baseUrl = import.meta.env.PROD ? '/MCP-Navigator' : '';
+        const response = await fetch(`${baseUrl}/data/comprehensive_mcp_directory.json`);
         if (!response.ok) {
           throw new Error('Failed to fetch MCP data');
         }
