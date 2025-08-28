@@ -6,6 +6,17 @@ export default function Footer() {
   const { mcpData } = useMCP();
   const currentYear = new Date().getFullYear();
 
+  // 獲取建置時間，如果沒有則使用當前時間
+  const buildTime = import.meta.env.VITE_BUILD_TIME || new Date().toISOString();
+  const lastUpdated = new Date(buildTime).toLocaleString('zh-TW', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Asia/Taipei'
+  });
+
   // Get some featured categories
   const featuredCategories = mcpData?.categories.slice(0, 6) || [];
 
@@ -101,7 +112,7 @@ export default function Footer() {
               </li>
               <li className="text-gray-400">
                 <span className="font-medium">Last Updated:</span>{' '}
-                2025-08-24
+                {lastUpdated}
               </li>
             </ul>
           </div>

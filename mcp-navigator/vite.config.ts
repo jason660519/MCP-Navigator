@@ -6,6 +6,11 @@ export default defineConfig({
   plugins: [react()],
   // 設定 GitHub Pages 的 base URL
   base: process.env.NODE_ENV === 'production' ? '/MCP-Navigator/' : '/',
+  // 定義環境變數
+  define: {
+    // 注入建置時間
+    'import.meta.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
