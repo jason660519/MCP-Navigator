@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useMCP } from '../../context/MCPContext';
+import DataSources from '../common/DataSources';
 
 export default function AboutPage() {
   const { mcpData } = useMCP();
@@ -29,23 +30,14 @@ export default function AboutPage() {
             collaboration in the AI community by showcasing the diverse range of MCPs available.
           </p>
           
-          <h2>Data Sources</h2>
-          <p>
-            The information in our directory is compiled from multiple sources, including:
+          <h2>Data Sources & Transparency</h2>
+          <p className="mb-6">
+            我們致力於提供透明、可靠的 MCP 服務器信息。以下是我們數據收集和驗證的詳細說明：
           </p>
-          <ul>
-            {mcpData && mcpData.metadata.sources.map((source, index) => (
-              <li key={index}>
-                {source.startsWith('http') ? (
-                  <a href={source} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    {source}
-                  </a>
-                ) : (
-                  source
-                )}
-              </li>
-            ))}
-          </ul>
+          <DataSources 
+            sources={mcpData?.metadata.sources} 
+            showDetails={true} 
+          />
           
           <h2>Contribute</h2>
           <p>
