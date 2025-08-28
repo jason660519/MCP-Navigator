@@ -11,10 +11,15 @@ import AboutPage from './components/pages/AboutPage';
 import ContactPage from './components/pages/ContactPage';
 import './App.css';
 
+// 獲取 base URL，用於 GitHub Pages 部署
+const getBasename = () => {
+  return import.meta.env.PROD ? '/MCP-Navigator' : '';
+};
+
 function App() {
   return (
     <MCPProvider>
-      <Router>
+      <Router basename={getBasename()}>
         <div className="flex min-h-screen flex-col bg-gray-50">
           <Header />
           

@@ -4,7 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Created by MiniMax Agent</title>
+  <title>MCP Navigator - Discover Model Context Protocol Servers</title>
+  <meta name="description" content="Explore and discover MCP (Model Context Protocol) servers for AI applications" />
+  
+  <!-- GitHub Pages SPA 路由處理腳本 -->
+  <script type="text/javascript">
+    // 處理 GitHub Pages 的 SPA 路由重定向
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
 </head>
 
 <body>
