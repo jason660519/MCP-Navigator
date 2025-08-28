@@ -70,6 +70,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/data-sources" className="text-gray-400 hover:text-white transition">
+                  Data Sources
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://github.com/jason660519/MCP-Navigator/blob/master/CONTRIBUTING.md"
                   target="_blank"
@@ -119,12 +124,35 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 mt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} MCP Navigator. All rights reserved.</p>
-          <p className="mt-2">
-            MCP Navigator is not affiliated with the official Model Context Protocol project.
-            This is a community-created resource.
-          </p>
+        <div className="pt-8 mt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <div className="text-center md:text-left mb-4 md:mb-0">
+              <p>&copy; {currentYear} MCP Navigator. All rights reserved.</p>
+              <p className="mt-1">
+                MCP Navigator is not affiliated with the official Model Context Protocol project.
+                This is a community-created resource.
+              </p>
+            </div>
+            <div className="text-center md:text-right">
+              <p className="mb-1">
+                <Link to="/data-sources" className="text-gray-400 hover:text-white transition">
+                  數據透明度
+                </Link>
+                {' • '}
+                <a 
+                  href="https://github.com/modelcontextprotocol/servers" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  官方來源
+                </a>
+              </p>
+              <p className="text-xs text-gray-600">
+                數據來源已驗證 • 定期更新維護
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

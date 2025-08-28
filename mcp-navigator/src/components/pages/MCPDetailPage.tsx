@@ -4,6 +4,7 @@ import { useMCP } from '../../context/MCPContext';
 import { slugify, unslugify } from '../../lib/utils';
 import { MCP } from '../../types';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Shield, ExternalLink } from 'lucide-react';
 
 export default function MCPDetailPage() {
   const { mcpSlug } = useParams<{ mcpSlug: string }>();
@@ -102,10 +103,15 @@ export default function MCPDetailPage() {
               <h1 className="text-3xl font-bold mr-3">{mcp.name}</h1>
               <Link
                 to={`/category/${slugify(mcp.category)}`}
-                className="bg-blue-100 text-blue-800 text-sm py-1 px-3 rounded-full"
+                className="bg-blue-100 text-blue-800 text-sm py-1 px-3 rounded-full mr-2"
               >
                 {mcp.category}
               </Link>
+              {/* 數據來源標籤 */}
+              <div className="flex items-center bg-green-100 text-green-800 text-xs py-1 px-2 rounded-full">
+                <Shield className="h-3 w-3 mr-1" />
+                <span>來源: {mcp.source}</span>
+              </div>
             </div>
             <p className="text-lg text-gray-700 mb-4">{mcp.description}</p>
             <div className="text-sm text-gray-600 mb-6">
@@ -117,13 +123,24 @@ export default function MCPDetailPage() {
                 <span className="font-medium mr-2">Last Updated:</span>
                 <span>{mcp.last_updated}</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center mb-1">
                 <span className="font-medium mr-2">Popularity:</span>
                 <span>
                   {mcp.popularity_indicators.level === 'high' && '⭐⭐⭐ High'}
                   {mcp.popularity_indicators.level === 'medium' && '⭐⭐ Medium'}
                   {mcp.popularity_indicators.level === 'low' && '⭐ Low'}
                 </span>
+              </div>
+              <div className="flex items-center">
+                <span className="font-medium mr-2">數據來源:</span>
+                <Link 
+                  to="/data-sources" 
+                  className="text-green-600 hover:text-green-800 flex items-center text-sm"
+                >
+                  <Shield className="h-4 w-4 mr-1" />
+                  {mcp.source}
+                  <ExternalLink className="h-3 w-3 ml-1" />
+                </Link>
               </div>
             </div>
           </div>

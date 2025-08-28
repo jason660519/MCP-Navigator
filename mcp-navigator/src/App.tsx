@@ -9,6 +9,7 @@ import CategoryPage from './components/pages/CategoryPage';
 import MCPDetailPage from './components/pages/MCPDetailPage';
 import AboutPage from './components/pages/AboutPage';
 import ContactPage from './components/pages/ContactPage';
+import DataSourcesPage from './components/pages/DataSourcesPage';
 import './App.css';
 
 // 獲取 base URL，用於 GitHub Pages 部署
@@ -33,6 +34,7 @@ function App() {
             <Route path="/mcp/:mcpSlug" element={<MCPDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/data-sources" element={<DataSourcesPage />} />
           </Routes>
           </main>
           
