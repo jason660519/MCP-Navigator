@@ -17,7 +17,7 @@ export default function MCPDetailPage() {
   useEffect(() => {
     if (!mcpData || !mcpSlug) return;
 
-    // 使用 slug 比較而不是依賴 unslugify
+    // Use slug comparison instead of relying on unslugify
     const foundMcpEntry = Object.entries(mcpData.servers).find(
       ([_, m]) => slugify(m.name) === mcpSlug
     );
@@ -107,10 +107,10 @@ export default function MCPDetailPage() {
               >
                 {mcp.category}
               </Link>
-              {/* 數據來源標籤 */}
+              {/* Data Source Label */}
               <div className="flex items-center bg-green-100 text-green-800 text-xs py-1 px-2 rounded-full">
                 <Shield className="h-3 w-3 mr-1" />
-                <span>來源: {mcp.source}</span>
+                <span>Source: {mcp.source}</span>
               </div>
             </div>
             <p className="text-lg text-gray-700 mb-4">{mcp.description}</p>
@@ -132,7 +132,7 @@ export default function MCPDetailPage() {
                 </span>
               </div>
               <div className="flex items-center">
-                <span className="font-medium mr-2">數據來源:</span>
+                <span className="font-medium mr-2">Data Source:</span>
                 <Link 
                   to="/data-sources" 
                   className="text-green-600 hover:text-green-800 flex items-center text-sm"

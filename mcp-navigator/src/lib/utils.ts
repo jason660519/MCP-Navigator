@@ -17,7 +17,7 @@ export function unslugify(slug: string): string {
     .replace(/-/g, ' ')
     .split(' ')
     .map(word => {
-      // 特殊處理常見縮寫
+      // Special handling for common abbreviations
       if (word.toLowerCase() === 'ai') return 'AI';
       if (word.toLowerCase() === 'api') return 'API';
       if (word.toLowerCase() === 'ui') return 'UI';
@@ -32,7 +32,7 @@ export function unslugify(slug: string): string {
       if (word.toLowerCase() === 'css') return 'CSS';
       if (word.toLowerCase() === 'js') return 'JS';
       if (word.toLowerCase() === 'ts') return 'TS';
-      // 普通單詞首字母大寫
+      // Capitalize first letter of regular words
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     })
     .join(' ');

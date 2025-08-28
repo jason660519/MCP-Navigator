@@ -4,7 +4,7 @@ import { slugify } from '../../lib/utils';
 import { Category } from '../../types';
 
 /**
- * 分類總覽頁面：顯示所有分類的網格視圖
+ * Categories overview page: displays grid view of all categories
  */
 export default function CategoriesPage() {
   const { mcpData, loading, error } = useMCP();
@@ -59,7 +59,7 @@ export default function CategoriesPage() {
       {/* Categories Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {mcpData.categories
-          .sort((a, b) => b.count - a.count) // 按服務器數量排序
+          .sort((a, b) => b.count - a.count) // Sort by server count
           .map((category: Category) => (
             <Link
               to={`/category/${slugify(category.name)}`}

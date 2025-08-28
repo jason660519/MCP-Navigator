@@ -11,7 +11,7 @@ export default function Header() {
   const { mcpData } = useMCP();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // 點擊外部關閉下拉選單
+  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {

@@ -3,7 +3,7 @@ import { useMCP } from '../../context/MCPContext';
 import { slugify, unslugify } from '../../lib/utils';
 
 /**
- * 調試組件：用於檢查分類匹配邏輯
+ * Debug component: used to check category matching logic
  */
 export default function CategoryDebug() {
   const { categorySlug } = useParams<{ categorySlug: string }>();

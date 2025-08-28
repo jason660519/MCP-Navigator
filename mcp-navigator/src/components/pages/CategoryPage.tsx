@@ -13,7 +13,7 @@ export default function CategoryPage() {
   useEffect(() => {
     if (!mcpData || !categorySlug) return;
 
-    // 使用 slug 比較而不是依賴 unslugify
+    // Use slug comparison instead of relying on unslugify
     const foundCategory = mcpData.categories.find(
       (cat) => slugify(cat.name) === categorySlug
     );

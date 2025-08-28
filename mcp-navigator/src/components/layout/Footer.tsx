@@ -6,7 +6,7 @@ export default function Footer() {
   const { mcpData } = useMCP();
   const currentYear = new Date().getFullYear();
 
-  // 獲取建置時間，如果沒有則使用當前時間
+  // Get build time, use current time if not available
   const buildTime = import.meta.env.VITE_BUILD_TIME || new Date().toISOString();
   const lastUpdated = new Date(buildTime).toLocaleString('en-US', {
     year: 'numeric',
@@ -136,7 +136,7 @@ export default function Footer() {
             <div className="text-center md:text-right">
               <p className="mb-1">
                 <Link to="/data-sources" className="text-gray-400 hover:text-white transition">
-                  數據透明度
+                  Data Transparency
                 </Link>
                 {' • '}
                 <a 
@@ -145,11 +145,11 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition"
                 >
-                  官方來源
+                  Official Sources
                 </a>
               </p>
               <p className="text-xs text-gray-600">
-                數據來源已驗證 • 定期更新維護
+                Data sources verified • Regularly updated and maintained
               </p>
             </div>
           </div>

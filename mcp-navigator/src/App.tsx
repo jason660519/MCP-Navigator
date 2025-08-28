@@ -12,7 +12,7 @@ import ContactPage from './components/pages/ContactPage';
 import DataSourcesPage from './components/pages/DataSourcesPage';
 import './App.css';
 
-// 獲取 base URL，用於 GitHub Pages 部署
+// Get base URL for GitHub Pages deployment
 const getBasename = () => {
   return import.meta.env.PROD ? '/MCP-Navigator' : '';
 };
