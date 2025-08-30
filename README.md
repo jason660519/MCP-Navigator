@@ -16,7 +16,6 @@
 
 **MCP Navigator** is the most comprehensive web platform for discovering and exploring **Model Context Protocol (MCP) servers**. Built with modern web technologies, it provides developers with an intuitive interface to browse, search, and understand the growing ecosystem of MCP implementations.
 
-🔗 **Live Website**: [https://7e5thigimj.space.minimax.io](https://7e5thigimj.space.minimax.io)
 
 ### 🚀 Key Features
 
@@ -169,7 +168,6 @@ If you encounter any issues or have questions:
 
 **MCP Navigator** 是最全面的 **Model Context Protocol (MCP) 伺服器**探索和發現網站平台。採用現代網頁技術構建，為開發者提供直觀的界面來瀏覽、搜索和了解不斷增長的 MCP 實現生態系統。
 
-🔗 **線上網站**: [https://7e5thigimj.space.minimax.io](https://7e5thigimj.space.minimax.io)
 
 ### 🚀 核心功能
 
