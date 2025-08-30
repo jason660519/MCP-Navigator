@@ -1,0 +1,314 @@
+{
+  "mcpServers": {
+    "// 說明": "這是 MCP 伺服器配置模板，請將此內容複製到您的 VS Code settings.json 文件中",
+    "// 注意": "使用前請確保已設置相應的環境變量",
+    
+    "// === AI Services ===": "",
+    "openai": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-openai"],
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+      }
+    },
+    "anthropic": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-anthropic"],
+      "env": {
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+      }
+    },
+    "huggingface": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-huggingface"],
+      "env": {
+        "HUGGINGFACE_API_TOKEN": "${HUGGINGFACE_API_TOKEN}"
+      }
+    },
+    "llamacloud": {
+      "command": "python",
+      "args": ["-m", "llama_index.server"],
+      "env": {
+        "LLAMA_CLOUD_API_KEY": "${LLAMA_CLOUD_API_KEY}"
+      }
+    },
+    "chroma": {
+      "command": "python",
+      "args": ["-m", "mcp_server_chroma"],
+      "env": {
+        "CHROMA_HOST": "${CHROMA_HOST:-localhost}",
+        "CHROMA_PORT": "${CHROMA_PORT:-8000}"
+      }
+    },
+    
+    "// === Databases ===": "",
+    "postgres": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "${POSTGRES_CONNECTION_STRING}"
+      }
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-sqlite"]
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-mongodb"],
+      "env": {
+        "MONGODB_URI": "${MONGODB_URI}"
+      }
+    },
+    "redis": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-redis"],
+      "env": {
+        "REDIS_URL": "${REDIS_URL}"
+      }
+    },
+    
+    "// === Productivity ===": "",
+    "notion": {
+      "command": "npx",
+      "args": ["@notion/mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      }
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-google-drive"],
+      "env": {
+        "GOOGLE_DRIVE_CREDENTIALS": "${GOOGLE_DRIVE_CREDENTIALS}"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-linear"],
+      "env": {
+        "LINEAR_API_KEY": "${LINEAR_API_KEY}"
+      }
+    },
+    
+    "// === Development Tools ===": "",
+    "github": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "gitlab": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-gitlab"],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "${GITLAB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "git": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-git"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem"]
+    },
+    "docker": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-docker"]
+    },
+    "kubernetes": {
+      "command": "go",
+      "args": ["run", "github.com/strowk/mcp-k8s-go@latest"]
+    },
+    
+    "// === Web Scraping ===": "",
+    "puppeteer": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-puppeteer"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-fetch"]
+    },
+    
+    "// === DevOps ===": "",
+    "aws-kb-retrieval": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-aws-kb-retrieval"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+        "AWS_REGION": "${AWS_REGION}"
+      }
+    },
+    "cloudflare": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-cloudflare"],
+      "env": {
+        "CLOUDFLARE_API_TOKEN": "${CLOUDFLARE_API_TOKEN}"
+      }
+    },
+    "browserbase": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-browserbase"],
+      "env": {
+        "BROWSERBASE_API_KEY": "${BROWSERBASE_API_KEY}"
+      }
+    },
+    "e2b": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-e2b"],
+      "env": {
+        "E2B_API_KEY": "${E2B_API_KEY}"
+      }
+    },
+    
+    "// === Media ===": "",
+    "youtube-transcript": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-youtube-transcript"]
+    },
+    "everart": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-everart"],
+      "env": {
+        "EVERART_API_KEY": "${EVERART_API_KEY}"
+      }
+    },
+    
+    "// === Note Taking ===": "",
+    "obsidian": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-obsidian"]
+    },
+    
+    "// === Cloud Services ===": "",
+    "gdrive": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-gdrive"],
+      "env": {
+        "GOOGLE_DRIVE_CREDENTIALS": "${GOOGLE_DRIVE_CREDENTIALS}"
+      }
+    },
+    
+    "// === Monitoring ===": "",
+    "sentry": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-sentry"],
+      "env": {
+        "SENTRY_AUTH_TOKEN": "${SENTRY_AUTH_TOKEN}"
+      }
+    },
+    
+    "// === Location Services ===": "",
+    "time": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-time"]
+    },
+    
+    "// === Finance ===": "",
+    "stripe": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-stripe"],
+      "env": {
+        "STRIPE_SECRET_KEY": "${STRIPE_SECRET_KEY}"
+      }
+    },
+    
+    "// === Utilities ===": "",
+    "memory": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-sequential-thinking"]
+    },
+    
+    "// === Research ===": "",
+    "arxiv": {
+      "command": "python",
+      "args": ["-m", "mcp_server_arxiv"]
+    },
+    
+    "// === Cloud Storage ===": "",
+    "s3": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-s3"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+        "AWS_REGION": "${AWS_REGION}"
+      }
+    },
+    
+    "// === File Systems ===": "",
+    "everything": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-everything"]
+    },
+    
+    "// === System Automation ===": "",
+    "apple-shortcuts": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-apple-shortcuts"]
+    },
+    
+    "// === Search & Web ===": "",
+    "web-search": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-web-search"]
+    },
+    
+    "// === GIS ===": "",
+    "qgis": {
+      "command": "python",
+      "args": ["-m", "mcp_server_qgis"]
+    },
+    
+    "// === Game Development ===": "",
+    "unity": {
+      "command": "unity",
+      "args": ["mcp-unity-package"]
+    },
+    
+    "// === Social Media ===": "",
+    "spotify": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-spotify"],
+      "env": {
+        "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
+        "SPOTIFY_CLIENT_SECRET": "${SPOTIFY_CLIENT_SECRET}"
+      }
+    },
+    "tiktok": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-tiktok"],
+      "env": {
+        "TIKTOK_ACCESS_TOKEN": "${TIKTOK_ACCESS_TOKEN}"
+      }
+    },
+    
+    "// === Communication ===": "",
+    "apple-books": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-apple-books"]
+    }
+  }
+}

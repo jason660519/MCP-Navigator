@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "MCP Servers Configuration for VS Code Installation",
+    "total_servers": 46,
+    "created_date": "2025-01-20",
+    "author": "MCP Navigator Project"
+  },
+  "installation_methods": {
+    "npm": {
+      "command": "npm install",
+      "global_flag": "-g",
+      "description": "Node.js package manager installation"
+    },
+    "pip": {
+      "command": "pip install",
+      "description": "Python package manager installation"
+    },
+    "git": {
+      "command": "git clone",
+      "description": "Git repository cloning"
+    },
+    "go": {
+      "command": "go install",
+      "description": "Go package installation"
+    },
+    "unity": {
+      "command": "Unity Package Manager",
+      "description": "Unity package installation"
+    }
+  },
+  "servers": {
+    "aws_kb_retrieval": {
+      "name": "AWS KB Retrieval",
+      "package": "@modelcontextprotocol/server-aws-kb-retrieval",
+      "installation_method": "npm",
+      "category": "Cloud Services",
+      "description": "Retrieval from AWS Knowledge Base using Bedrock Agent Runtime",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server",
+      "requires_api_key": true,
+      "config_required": ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION"]
+    },
+    "brave_search": {
+      "name": "Brave Search",
+      "package": "@modelcontextprotocol/server-brave-search",
+      "installation_method": "npm",
+      "category": "Search & Web",
+      "description": "Web and local search using Brave's Search API",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "requires_api_key": true,
+      "config_required": ["BRAVE_API_KEY"]
+    },
+    "everart": {
+      "name": "EverArt",
+      "package": "@modelcontextprotocol/server-everart",
+      "installation_method": "npm",
+      "category": "AI Services",
+      "description": "AI image generation using various models",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "requires_api_key": true,
+      "config_required": ["EVERART_API_KEY"]
+    },
+    "fetch": {
+      "name": "Fetch",
+      "package": "@modelcontextprotocol/server-fetch",
+      "installation_method": "npm",
+      "category": "Web Scraping",
+      "description": "Web content fetching and conversion for efficient LLM usage",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "filesystem": {
+      "name": "Filesystem",
+      "package": "@modelcontextprotocol/server-filesystem",
+      "installation_method": "npm",
+      "category": "File Systems",
+      "description": "Secure file operations with configurable access controls",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "requires_api_key": false,
+      "config_required": ["ALLOWED_DIRECTORIES"]
+    },
+    "git": {
+      "name": "Git",
+      "package": "@modelcontextprotocol/server-git",
+      "installation_method": "npm",
+      "category": "Development Tools",
+      "description": "Tools to read, search, and manipulate Git repositories",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "github": {
+      "name": "GitHub",
+      "package": "@modelcontextprotocol/server-github",
+      "installation_method": "npm",
+      "category": "Development Tools",
+      "description": "Repository management, file operations, and GitHub API integration",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "requires_api_key": true,
+      "config_required": ["GITHUB_PERSONAL_ACCESS_TOKEN"]
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "package": "@modelcontextprotocol/server-gitlab",
+      "installation_method": "npm",
+      "category": "Development Tools",
+      "description": "GitLab API integration enabling project management",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
+      "requires_api_key": true,
+      "config_required": ["GITLAB_PERSONAL_ACCESS_TOKEN"]
+    },
+    "google_drive": {
+      "name": "Google Drive",
+      "package": "@modelcontextprotocol/server-gdrive",
+      "installation_method": "npm",
+      "category": "Cloud Storage",
+      "description": "File access and search capabilities for Google Drive",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+      "requires_api_key": true,
+      "config_required": ["GOOGLE_DRIVE_CREDENTIALS"]
+    },
+    "google_maps": {
+      "name": "Google Maps",
+      "package": "@modelcontextprotocol/server-google-maps",
+      "installation_method": "npm",
+      "category": "Location Services",
+      "description": "Location services and mapping functionality",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "requires_api_key": true,
+      "config_required": ["GOOGLE_MAPS_API_KEY"]
+    },
+    "memory": {
+      "name": "Memory",
+      "package": "@modelcontextprotocol/server-memory",
+      "installation_method": "npm",
+      "category": "AI Services",
+      "description": "Knowledge graph-based persistent memory system",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "postgres": {
+      "name": "PostgreSQL",
+      "package": "@modelcontextprotocol/server-postgres",
+      "installation_method": "npm",
+      "category": "Databases",
+      "description": "Read-only database access with schema inspection capabilities",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "requires_api_key": false,
+      "config_required": ["DATABASE_URL"]
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "package": "@modelcontextprotocol/server-puppeteer",
+      "installation_method": "npm",
+      "category": "Web Scraping",
+      "description": "Browser automation and web scraping capabilities",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "sequential_thinking": {
+      "name": "Sequential Thinking",
+      "package": "@modelcontextprotocol/server-sequential-thinking",
+      "installation_method": "npm",
+      "category": "AI Services",
+      "description": "Dynamic problem-solving through sequential reasoning",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequential-thinking",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "slack": {
+      "name": "Slack",
+      "package": "@modelcontextprotocol/server-slack",
+      "installation_method": "npm",
+      "category": "Communication",
+      "description": "Slack workspace integration for messaging and collaboration",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "requires_api_key": true,
+      "config_required": ["SLACK_BOT_TOKEN"]
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "package": "@modelcontextprotocol/server-sqlite",
+      "installation_method": "npm",
+      "category": "Databases",
+      "description": "Database operations and schema inspection for SQLite",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "requires_api_key": false,
+      "config_required": ["DATABASE_PATH"]
+    },
+    "time": {
+      "name": "Time",
+      "package": "@modelcontextprotocol/server-time",
+      "installation_method": "npm",
+      "category": "Utilities",
+      "description": "Time and date utilities for various operations",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "youtube": {
+      "name": "YouTube",
+      "package": "@modelcontextprotocol/server-youtube",
+      "installation_method": "npm",
+      "category": "Media",
+      "description": "YouTube integration for video management and data retrieval",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/youtube",
+      "requires_api_key": true,
+      "config_required": ["YOUTUBE_API_KEY"]
+    },
+    "sentry": {
+      "name": "Sentry",
+      "package": "@modelcontextprotocol/server-sentry",
+      "installation_method": "npm",
+      "category": "Monitoring",
+      "description": "Error tracking and performance monitoring integration",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry",
+      "requires_api_key": true,
+      "config_required": ["SENTRY_DSN"]
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "package": "@modelcontextprotocol/server-cloudflare",
+      "installation_method": "npm",
+      "category": "Cloud Services",
+      "description": "Cloudflare API integration for DNS and CDN management",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/cloudflare",
+      "requires_api_key": true,
+      "config_required": ["CLOUDFLARE_API_TOKEN"]
+    },
+    "notion": {
+      "name": "Notion",
+      "package": "@notion/mcp-server",
+      "installation_method": "npm",
+      "category": "Productivity",
+      "description": "Notion official MCP server",
+      "repository": "https://github.com/makenotion/notion-mcp-server",
+      "requires_api_key": true,
+      "config_required": ["NOTION_API_KEY"]
+    },
+    "mongodb": {
+      "name": "MongoDB",
+      "package": "mcp-mongo-server",
+      "installation_method": "npm",
+      "category": "Databases",
+      "description": "A Model Context Protocol Server for querying and analyzing MongoDB collections",
+      "repository": "https://github.com/kiliczsh/mcp-mongo-server",
+      "requires_api_key": false,
+      "config_required": ["MONGODB_URI"]
+    },
+    "redis": {
+      "name": "Redis",
+      "package": "@redis/mcp-server",
+      "installation_method": "npm",
+      "category": "Databases",
+      "description": "A natural language interface designed for agentic applications to efficiently manage and search data in Redis",
+      "repository": "https://github.com/redis/mcp-redis",
+      "requires_api_key": false,
+      "config_required": ["REDIS_URL"]
+    },
+    "stripe": {
+      "name": "Stripe",
+      "package": "@stripe/mcp-server",
+      "installation_method": "npm",
+      "category": "Finance",
+      "description": "Allows you to integrate with Stripe APIs",
+      "repository": "https://github.com/stripe/agent-toolkit/tree/main",
+      "requires_api_key": true,
+      "config_required": ["STRIPE_API_KEY"]
+    },
+    "browserbase": {
+      "name": "Browserbase",
+      "package": "@browserbase/mcp-server",
+      "installation_method": "npm",
+      "category": "Web Scraping",
+      "description": "Automate browser interactions in the cloud (e.g. web navigation, data extraction, form filling, and more)",
+      "repository": "https://github.com/browserbase/mcp-server-browserbase",
+      "requires_api_key": true,
+      "config_required": ["BROWSERBASE_API_KEY"]
+    },
+    "e2b": {
+      "name": "E2B",
+      "package": "@e2b/mcp-server",
+      "installation_method": "npm",
+      "category": "Development Tools",
+      "description": "Run code in secure sandboxes hosted by E2B",
+      "repository": "https://github.com/e2b-dev/mcp-server",
+      "requires_api_key": true,
+      "config_required": ["E2B_API_KEY"]
+    },
+    "linear": {
+      "name": "Linear",
+      "package": "linear-mcp-server",
+      "installation_method": "npm",
+      "category": "Productivity",
+      "description": "Linear MCP Server. Provides integration with Linear's issue tracking system through MCP",
+      "repository": "https://github.com/jerhadf/linear-mcp-server",
+      "requires_api_key": true,
+      "config_required": ["LINEAR_API_KEY"]
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "package": "obsidian-mcp",
+      "installation_method": "npm",
+      "category": "Note Taking",
+      "description": "Obsidian integration for note management and knowledge graphs",
+      "repository": "https://github.com/calclavia/obsidian-mcp",
+      "requires_api_key": false,
+      "config_required": ["OBSIDIAN_VAULT_PATH"]
+    },
+    "qgis": {
+      "name": "QGIS",
+      "package": "qgis-mcp-server",
+      "installation_method": "npm",
+      "category": "GIS",
+      "description": "QGIS integration for geographic information systems",
+      "repository": "https://github.com/Aarond2018/qgis-mcp-server",
+      "requires_api_key": false,
+      "config_required": ["QGIS_PATH"]
+    },
+    "apple_books": {
+      "name": "Apple Books",
+      "package": "apple-books-mcp",
+      "installation_method": "git",
+      "repository": "https://github.com/vgnshiyer/apple-books-mcp",
+      "category": "Note Taking",
+      "description": "Transform your Apple Books to a queryable knowledge base",
+      "requires_api_key": false,
+      "config_required": ["APPLE_BOOKS_PATH"]
+    },
+    "unity_engine": {
+      "name": "Unity Engine",
+      "package": "Unity-MCP",
+      "installation_method": "unity",
+      "repository": "https://github.com/IvanMurzak/Unity-MCP",
+      "category": "Game Development",
+      "description": "Tools for Unity Editor and for a game made with Unity",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "apple_shortcuts": {
+      "name": "Apple Shortcuts",
+      "package": "mcp-server-apple-shortcuts",
+      "installation_method": "git",
+      "repository": "https://github.com/recursechat/mcp-server-apple-shortcuts",
+      "category": "System Automation",
+      "description": "An MCP Server Integration with Apple Shortcuts",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "spotify": {
+      "name": "Spotify",
+      "package": "spotify-mcp",
+      "installation_method": "npm",
+      "category": "Media",
+      "description": "Connects with Spotify for playback control and track/album/artist/playlist management",
+      "repository": "https://github.com/varunneal/spotify-mcp",
+      "requires_api_key": true,
+      "config_required": ["SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET"]
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "package": "tiktok-mcp",
+      "installation_method": "npm",
+      "category": "Social Media",
+      "description": "TikTok integration for getting post details and video's subtitles",
+      "repository": "https://github.com/Seym0n/tiktok-mcp",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "arxiv": {
+      "name": "ArXiv",
+      "package": "arxiv-mcp-server",
+      "installation_method": "pip",
+      "category": "Research",
+      "description": "Search ArXiv research papers",
+      "repository": "https://github.com/blazickjp/arxiv-mcp-server",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "kubernetes": {
+      "name": "Kubernetes",
+      "package": "github.com/strowk/mcp-k8s-go",
+      "installation_method": "go",
+      "category": "DevOps",
+      "description": "Kubernetes cluster operations through MCP",
+      "repository": "https://github.com/strowk/mcp-k8s-go",
+      "requires_api_key": false,
+      "config_required": ["KUBECONFIG"]
+    },
+    "docker": {
+      "name": "Docker",
+      "package": "docker-mcp-server",
+      "installation_method": "pip",
+      "category": "DevOps",
+      "description": "Docker container management and operations",
+      "repository": "https://github.com/cloudflare/mcp-server-docker",
+      "requires_api_key": false,
+      "config_required": []
+    },
+    "openai": {
+      "name": "OpenAI",
+      "package": "openai-mcp-server",
+      "installation_method": "pip",
+      "category": "AI Services",
+      "description": "OpenAI API integration for various AI services",
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/openai",
+      "requires_api_key": true,
+      "config_required": ["OPENAI_API_KEY"]
+    },
+    "huggingface_spaces": {
+      "name": "HuggingFace Spaces",
+      "package": "mcp-hfspace",
+      "installation_method": "npm",
+      "category": "AI Services",
+      "description": "Use HuggingFace spaces from your MCP Client. Supports Images, Audio, Text and more",
+      "repository": "https://github.com/evalstate/mcp-hfspace",
+      "requires_api_key": true,
+      "config_required": ["HUGGINGFACE_API_KEY"]
+    },
+    "llamacloud": {
+      "name": "LlamaCloud",
+      "package": "@llamaindex/mcp-server-llamacloud",
+      "installation_method": "npm",
+      "category": "AI Services",
+      "description": "LlamaCloud MCP Server. A TypeScript-based MCP server connecting to a managed index on LlamaCloud",
+      "repository": "https://github.com/run-llama/mcp-server-llamacloud",
+      "requires_api_key": true,
+      "config_required": ["LLAMACLOUD_API_KEY"]
+    },
+    "chroma": {
+      "name": "Chroma",
+      "package": "chromadb-mcp-server",
+      "installation_method": "pip",
+      "category": "AI Services",
+      "description": "Embeddings, vector search, document storage, and full-text search with the open-source AI application database",
+      "repository": "https://github.com/chroma-core/chroma-mcp",
+      "requires_api_key": false,
+      "config_required": ["CHROMA_HOST", "CHROMA_PORT"]
+    }
+  },
+  "vs_code_config_template": {
+    "mcpServers": {
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "@modelcontextprotocol/server-filesystem",
+          "/path/to/allowed/directory"
+        ]
+      },
+      "git": {
+        "command": "npx",
+        "args": [
+          "@modelcontextprotocol/server-git",
+          "--repository",
+          "/path/to/git/repository"
+        ]
+      },
+      "github": {
+        "command": "npx",
+        "args": [
+          "@modelcontextprotocol/server-github"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token_here"
+        }
+      }
+    }
+  },
+  "installation_notes": {
+    "prerequisites": [
+      "Node.js 18+ for npm packages",
+      "Python 3.8+ for pip packages",
+      "Go 1.19+ for go packages",
+      "Git for repository cloning"
+    ],
+    "common_issues": [
+      "Some servers require API keys - check config_required field",
+      "File paths must be absolute in VS Code configuration",
+      "Environment variables should be set before starting VS Code",
+      "Some servers may require additional system dependencies"
+    ],
+    "security_notes": [
+      "Never commit API keys to version control",
+      "Use environment variables for sensitive configuration",
+      "Review file system access permissions carefully",
+      "Test servers in isolated environments first"
+    ]
+  }
+}
