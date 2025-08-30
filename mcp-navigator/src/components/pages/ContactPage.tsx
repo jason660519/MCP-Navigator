@@ -13,19 +13,6 @@ export default function ContactPage() {
         
         <div className="space-y-6">
           <div>
-            <h3 className="font-medium text-gray-900 mb-2">Business Collaboration & Partnership</h3>
-            <p className="text-gray-600 text-sm mb-3">
-              For business collaboration or partnership opportunities, please feel free to contact me via my personal email. We welcome discussions about cooperation opportunities, technical integration, or other business proposals.
-            </p>
-            <a 
-              href="mailto:jason660519@gmail.com"
-              className="text-blue-600 hover:text-blue-800 transition"
-            >
-              jason660519@gmail.com
-            </a>
-          </div>
-          
-          <div>
             <h3 className="font-medium text-gray-900 mb-2">Technical Support & Issue Reporting</h3>
             <p className="text-gray-600 text-sm mb-3">
               For technical issues, feature suggestions, or bug reports, please submit them through GitHub Issues and we will address them promptly.
@@ -37,6 +24,19 @@ export default function ContactPage() {
               className="text-blue-600 hover:text-blue-800 transition"
             >
               Submit Issue
+            </a>
+          </div>
+          
+          <div>
+            <h3 className="font-medium text-gray-900 mb-2">Business Collaboration & Partnership</h3>
+            <p className="text-gray-600 text-sm mb-3">
+              For business collaboration or partnership opportunities, please feel free to contact me via my personal email. We welcome discussions about cooperation opportunities, technical integration, or other business proposals.
+            </p>
+            <a 
+              href="mailto:jason660519@gmail.com"
+              className="text-blue-600 hover:text-blue-800 transition"
+            >
+              jason660519@gmail.com
             </a>
           </div>
           

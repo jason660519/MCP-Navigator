@@ -39,10 +39,10 @@ export default function DataSourcesPage() {
             <p className="text-green-800 text-sm">Multi-source cross-verification ensures accuracy</p>
           </div>
           
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
-            <Info className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-            <h3 className="font-semibold text-blue-900 mb-2">Real-time Updates</h3>
-            <p className="text-blue-800 text-sm">Regular scanning and manual review keep data current</p>
+          <div className="bg-ferrari-black/5 border border-ferrari-red/20 rounded-lg p-6 text-center">
+            <Info className="h-8 w-8 text-ferrari-red mx-auto mb-3" />
+            <h3 className="font-semibold text-ferrari-red mb-2">Real-time Updates</h3>
+            <p className="text-ferrari-gray-dark text-sm">Regular scanning and manual review keep data current</p>
           </div>
           
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
@@ -172,7 +172,7 @@ export default function DataSourcesPage() {
             href="https://github.com/jason660519/MCP-Navigator/blob/master/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition"
+            className="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition"
           >
             Contributing Guide
           </a>

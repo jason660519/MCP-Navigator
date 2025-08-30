@@ -34,7 +34,7 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl p-8 md:p-12">
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl p-8 md:p-12 shadow-2xl border border-blue-600/30">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Model Context Protocol Navigator</h1>
           <p className="text-xl opacity-90 mb-8">
